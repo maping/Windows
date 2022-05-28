@@ -1,4 +1,4 @@
-# Azure 从入门到精通
+# Windows
 
 - [Windows 版本](./version.md)
 - [Windows 快捷键](./shortcut.md)
