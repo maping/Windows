@@ -186,6 +186,8 @@ and let us know if you're interested in trying out our newest features: https://
 
 ### 8.2 安装和配置 Azure Function CLI
 
+## 9. AWS 开发环境
+
 ## 安装 Terraform
 - 下载 [Teffaform](https://www.terraform.io/downloads.html)
 
