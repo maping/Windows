@@ -36,9 +36,5 @@
 
 ## 3. 自定义快捷方式 
 
-### 3.1 快速显示环境变量窗口
-1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
-2. 右键 Run as administrator，可以添加修改 System Variables
-
 ## Reference
 - [How to Quick-Switch Between Tasks in Windows 10](https://www.hongkiat.com/blog/switch-tasks-windows-10/)
