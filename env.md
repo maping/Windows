@@ -1,4 +1,4 @@
-# Windows 11 开发环境设置
+# Windows 下开发环境设置
 
 ## 1. 安装和配置 Open JDK
 - 下载 [Open JDK](https://openjdk.java.net/)
