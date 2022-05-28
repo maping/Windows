@@ -62,3 +62,9 @@ bcdedit /deletevalue {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f} hypervisorlaunchtype
 选择你要删除的菜单项
 
 点击 Delete ，发现提示
+
+## 4. 开机自启动应用程序
+把应用程序的快捷方式放到 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp 目录下
+
+## 5. 管理开机自启动项
+按下 Win + R ，输入 msconfig，点击 Startup，Open Task Manager
