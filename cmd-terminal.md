@@ -72,7 +72,7 @@ wmic process 78796 get commandline
 wmic process where caption="java.exe" get caption,commandline /value
 ```
 
-## 6. jar 命令可以处理 .jar、.war、.ear 类型的压缩文件
+## 6. 使用 jar 命令处理 jar/war/ear 类型的压缩文件
 1. 创建压缩文件：jar -cvf 目标压缩文件 压缩目录/文件（多个目录/文件之间以空格间隔）
 - jar -cvf ehcache.war META-INF/ WEB-INF/
 2. 查看压缩文件：jar -tvf 压缩文件
