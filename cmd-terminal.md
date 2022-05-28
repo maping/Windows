@@ -23,7 +23,7 @@
 	- 949——韩文
 	- 866——俄文
 
-# 5. 查看占用指定端口的程序
+## 5. 查看占用指定端口的程序
 ```console
 netstat -aon|findstr "8009"
 ```
@@ -40,22 +40,16 @@ wmic process 78796 get commandline
 wmic process where caption="java.exe" get caption,commandline /value
 ```
 
+## 6. 查看 CPU Core 
+1. 按下 Win + X ，选择 Device Manager，点击 Processors
+2. 打开 Task Manager，右键 CPU Graph，选择 Change Graph to -> Logical Processors
+
+## 7. jar 命令可以处理 .jar、.war、.ear 类型的压缩文件
+1. 创建压缩文件：jar -cvf 目标压缩文件 压缩目录/文件（多个目录/文件之间以空格间隔）
+- jar -cvf ehcache.war META-INF/ WEB-INF/
+2. 查看压缩文件：jar -tvf 压缩文件
+- jar -tvf ehcache.war 
+3. 解压压缩文件：jar -xvf 压缩文件
+	
 ## Reference
 - [比CMD更强大的命令行WMIC](https://www.cnblogs.com/top5/p/3143837.html)
-
-# 查看 CPU Core 
-    按下 Win + X ，选择 Device Manager，点击 Processors
-    
-
- 
-   打开 Task Manager，右键 CPU Graph，选择 Change Graph to -> Logical Processors
-
-
-# jar 命令可以处理 .jar、.war、.ear 类型的压缩文件
-	1. 创建压缩文件：jar -cvf 目标压缩文件 压缩目录/文件（多个目录/文件之间以空格间隔）（1）jar -cvf ehcache.war META-INF/ WEB-INF/
-	2. 查看压缩文件：jar -tvf 压缩文件
-	（1）jar -tvf ehcache.war 
-	3. 解压压缩文件：jar -xvf 压缩文件
-	（1）
-	
-![image](https://user-images.githubusercontent.com/7236807/170800891-1be7a03c-e98d-402b-8cea-29dc967ad6af.png)
