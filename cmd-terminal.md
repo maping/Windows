@@ -7,9 +7,41 @@
 - 鼠标右键粘贴剪贴板内容
 >注意：cmd terminal 不支持跨行命令。
 	
-## 2. 查看命令的位置: where
+## 2. 查看命令的位置
+```console
+where python
+```
 
-## 3. 删除目录：rd /s/q 目录路径
+## 3. 文件命令
+
+### 3.1 查看文件内容
+```console
+type python
+```
+### 3.2 创建文件
+```console
+echo hello > hello.md
+```
+### 3.3 修改文件名
+```console
+move hello.md helloworld.md
+```
+### 3.4 删除文件
+```console
+del helloworld.md
+```
+
+## 4. 目录命令
+
+### 4.1 创建目录
+
+### 4.1 修改目录名
+
+### 4.1 删除目录
+rd /s/q 目录路径
+
+### 4.1 复制目录
+
 
 ## 4. 解决 cmd 窗口中文字符乱码问题
 - 查看 cmd 窗口字符编码: chcp 
