@@ -23,9 +23,6 @@
 	- 949——韩文
 	- 866——俄文
 
-# 查看机器 Serial Number
-    打开 PowerShell 窗口，运行：gwmi –class win32_bios
-
 # 5. 查看占用指定端口的程序
 ```console
 netstat -aon|findstr "8009"
