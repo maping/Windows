@@ -1,6 +1,30 @@
 # Windows 下开发环境设置
 
-## 1. 安装和配置 Open JDK
+## 1. 一键显示环境变量窗口
+1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
+2. 右键 Run as administrator，可以添加修改 System Variables
+
+## 2. 安装 Git
+- 下载 [Git](https://git-scm.com/download/win) 
+-	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
+``` console
+$ git --version
+git version 2.32.0.windows.1
+```
+
+## 3. 安装和配置 FileZilla
+- 下载 [FileZilla](https://filezilla-project.org/download.php) 
+>注意: 不能直接下载 .exe 文件，安全检查会报告有 virus，不让下载。
+
+## 4. 安装和配置 MobaXterm
+- 下载 [MobaXterm](https://mobaxterm.mobatek.net/download.html) 
+
+## 5. 安装和配置 WinSCP
+- 下载 [WinSCP](https://winscp.net/eng/download.php) 
+
+## 3. Java 开发环境
+
+### 3.1 安装和配置 Open JDK
 - 下载 [Open JDK](https://openjdk.java.net/)
 - 解压缩：openjdk-17_windows-x64_bin.zip
 - 设置环境变量 JAVA_HOME，例如：C:\software\java\openjdk
@@ -14,14 +38,7 @@ OpenJDK Runtime Environment (build 17+35-2724)
 OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
 ```
 
-## 安装 Git
-- 下载 [Git](https://git-scm.com/download/win) 
--	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
-``` console
-$ git --version
-git version 2.32.0.windows.1
-```
-## 安装和配置 Ant
+### 3.2 安装和配置 Ant
 - 下载 [Ant](https://ant.apache.org/bindownload.cgi)
 - 解压缩：apache-ant-1.10.10-bin.zip
 - 设置环境变量 ANT_HOME，例如：C:\software\apache\ant
@@ -32,7 +49,7 @@ $ ant -version
 Apache Ant(TM) version 1.10.10 compiled on April 12 2021
 ```
 
-## 安装和配置 Maven
+### 3.3 安装和配置 Maven
 - 下载 [Maven](https://maven.apache.org/download.cgi)
 - 解压缩：apache-maven-3.8.2-bin.zip
 -	设置环境变量 M2_HOME，例如：C:\software\apache\maven
@@ -48,20 +65,15 @@ Default locale: en_US, platform encoding: GBK
 OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ```
 
-## 安装和配置 FileZilla
-- 下载 [FileZilla](https://filezilla-project.org/download.php) 
->注意: 不能直接下载 .exe 文件，安全检查会报告有 virus，不让下载。
+## 4. .NET 开发环境
 
-## 安装和配置 Nexus 3 
-- 下载 [Nexus 3](https://www.sonatype.com/nexus-repository-oss) 
+## 5. Python 开发环境
 
-## 安装和配置 MobaXterm
-- 下载 [MobaXterm](https://mobaxterm.mobatek.net/download.html) 
+## 6. Go 开发环境
 
-## 安装和配置 WinSCP
-- 下载 [WinSCP](https://winscp.net/eng/download.php) 
- 
-## 安装和配置 Docker 
+## 7. 容器开发环境
+
+### 7.1 安装和配置 Docker Desktop 
 >重要：Docker for Windows 目前只支持 Windows 10 和 Windows Server 2016，不支持 Windows 7。
 
 - 下载 [Docker](https://docs.docker.com/docker-for-windows/install/) ，点击 Get Docker for Windows (Stable)
@@ -117,7 +129,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
  ``` 
 
-## 安装 kubectl 
+### 7.2 安装 kubectl 
 -	查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl：https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe ，比如：- 下载 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.4/bin/windows/amd64/kubectl.exe
     - VERSION-TAG 取值为版本号，比如：v1.23.4
