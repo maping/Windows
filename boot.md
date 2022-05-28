@@ -7,18 +7,23 @@
 C:\WINDOWS\system32>bcdedit /enum all
 ```
 
+## 2. 修改启动菜单项
 修改前，先把当前的启动菜单项备份
+```console
 C:\WINDOWS\system32>bcdedit /export C:\Users\pinm\bcd.bak
+```
 
 增加启动的菜单项
+```console
 C:\WINDOWS\system32>bcdedit /copy {current} /d "No Hyper-V"
 The entry was successfully copied to {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f}.
 C:\WINDOWS\system32>bcdedit /set {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f} hypervisorlaunchtype off
 The operation completed successfully.
-
+```
 重启机器，将会看到增加了 "No Hyper-V" 这一启动菜单项
 
-删除启动的菜单项
+
+## 3. 删除启动的菜单项
 Windows Boot Loader
 -------------------
 identifier              {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f}
