@@ -148,7 +148,9 @@ Server Version: version.Info{Major:"1", Minor:"20", GitVersion:"v1.20.7", GitCom
 
 >参考：https://kubernetes.io/zh/docs/tasks/tools/install-kubectl/
 
-## 安装和配置 Azure CLI
+## 8. Azure 开发环境
+
+### 8.1 安装和配置 Azure CLI
 - 下载 [Azure CLI](https://aka.ms/InstallAzureCliWindows) 
 - 检查安装是否正确：打开 cmd 命令窗口，`az --version`
 ``` console
@@ -182,12 +184,7 @@ Please let us know how we are doing: https://aka.ms/azureclihats
 and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
 ```  
 
-## 安装 SQuirrel
-- 下载 [SQuirrel](http://www.squirrelsql.org/#installation)
-- 安装：以管理员身份打开一个 cmd 窗口，执行 ```java -jar squirrel-sql-3.8.1-standard.jar```
-
-## 安装 MySQL Connector
-- 下载 [MySQL Connector](https://dev.mysql.com/downloads/connector/j/)
+### 8.2 安装和配置 Azure Function CLI
 
 ## 安装 Terraform
 - 下载 [Teffaform](https://www.terraform.io/downloads.html)
