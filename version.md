@@ -1,4 +1,4 @@
-# 查看 Windows 版本
+# Windows 版本
 ## 1. 查看 Windows 版本
 
 按下快捷键：Win +R，然后输入 winver
