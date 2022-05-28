@@ -24,6 +24,7 @@ The operation completed successfully.
 
 
 ## 3. 删除启动的菜单项
+```code
 Windows Boot Loader
 -------------------
 identifier              {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f}
@@ -47,12 +48,17 @@ hypervisorlaunchtype    Off           {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f}
 device                  partition=C:
 path                    \WINDOWS\system32\winload.efi
 description             No Hyper-V
+```
 
+```console
 bcdedit /delete {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f}
 bcdedit /deletevalue {79e3b6d0-bea5-11e7-8101-f29f4a0ab42f} hypervisorlaunchtype
+```
 
 点击 Delete 将其删除
-以系统管理员身份打开一个 cmd，运行msconfig，点击Boot
+
+以系统管理员身份打开一个 cmd，运行 msconfig，点击Boot
+
 选择你要删除的菜单项
 
 点击 Delete ，发现提示
