@@ -5,14 +5,13 @@
 - 查看历史命令: F7
 - 切换全屏: Alt + 回车 
 - 鼠标右键粘贴剪贴板内容
-
-但是不支持跨行命令
-	5. 从 explorer 快速进入 cmd
-	6. 查看命令的位置: where
-	7. 删除目录：rd /s/q 目录路径
+>注意：cmd terminal 不支持跨行命令
 	
+## 2. 查看命令的位置: where
 
-##  2. 解决 cmd 窗口中文字符乱码问题
+## 3. 删除目录：rd /s/q 目录路径
+
+## 4. 解决 cmd 窗口中文字符乱码问题
 - 查看 cmd 窗口字符编码: chcp 
 - 修改 cmd 窗口字符编码: chcp <字符编码>
 - 字符编码对应代码:
@@ -24,25 +23,28 @@
 	- 949——韩文
 	- 866——俄文
 
-# 开机自启动应用程序
-    把应用程序的快捷方式放到 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp 目录下
-# 管理开机自启动项
-    按下 Win + R ，输入 msconfig，点击 Startup，Open Task Manager
 # 查看机器 Serial Number
     打开 PowerShell 窗口，运行：gwmi –class win32_bios
 
-# 如何查看端口占用的程序
+# 5. 查看占用指定端口的程序
+```console
 netstat -aon|findstr "8009"
+```
 
+```console
 tasklist|findstr "78796"
+```
 
+```console
 wmic process 78796 get commandline
+```
 
-
+```console
 wmic process where caption="java.exe" get caption,commandline /value
+```
 
-参考文献：
-	1. https://www.cnblogs.com/top5/p/3143837.html
+## Reference
+- [比CMD更强大的命令行WMIC](https://www.cnblogs.com/top5/p/3143837.html)
 
 # 查看 CPU Core 
     按下 Win + X ，选择 Device Manager，点击 Processors
