@@ -16,7 +16,7 @@
 - Ctrl + Shift + F 显示搜索框 
 - Ctrl + Shift + P 显示命令行窗口
 - Ctrl + Shift + W 关闭当前 Terminal Tab
-- Alt + F4 关闭 Windows Terminal，可能需要额外的 Fn 键
+- Alt + F4 关闭 Windows Terminal，可能需要额外的 Fn 键，以避免和音量调节快捷键冲突
 
 ## 5. 为不同的 Termial 配置不同的颜色显示 
 
