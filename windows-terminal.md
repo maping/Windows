@@ -18,7 +18,7 @@
 - Ctrl + Shift + W 关闭当前 Terminal Tab
 - Alt + F4 关闭 Windows Terminal，可能需要额外的 Fn 键，以避免和音量调节快捷键冲突
 
-## 5. 为不同的 Termial 配置不同的颜色显示 
+## 5. 为不同的 Terminal 配置不同的颜色显示 
 
 ## 6. 其它
 - 删除文件时，如果提示 Permission Denied，可能是因为有其它程序在使用该文件
