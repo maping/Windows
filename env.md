@@ -130,12 +130,14 @@ For more examples and ideas, visit:
  ``` 
 
 ### 7.2 安装 kubectl 
--	查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
-- 科学下载 kubectl：https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe ，比如：- 下载 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.4/bin/windows/amd64/kubectl.exe
+- 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
+- 科学下载 kubectl
+    - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
+    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.4/bin/windows/amd64/kubectl.exe
     - VERSION-TAG 取值为版本号，比如：v1.23.4
     - OS 取值可以为 darwin, linux, windows
     - ARCH 取值可以为 386, amd64
--	设置环境变量 PATH，增加一条，C:\software\google\kubernetes 
+- 设置环境变量 PATH，增加一条，C:\Software\Google\Kubernetes 
 - 检查安装是否正确：打开 cmd 命令窗口，```kubectl version```
 ```console
 $ kubectl version --client
@@ -145,6 +147,8 @@ Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.2", GitCom
 Server Version: version.Info{Major:"1", Minor:"20", GitVersion:"v1.20.7", GitCommit:"6b3f9b283463c1d5a2455df301182805e65c7145", GitTreeState:"clean", BuildDate:"2021-05-19T22:28:47Z", GoVersion:"go1.15.12", Compiler:"gc", Platform:"linux/amd64"}
 ```
 >说明：Docker Desktop for Windows 会在 PATH（C:\Program Files\Docker\Docker\resources\bin）中添加自己的 kubectl 程序。 如果你之前安装过 Docker Desktop，你可能需要将新安装的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
+
+>重要：因为 kubectl 是绿色安装，Windows 下 cmd terminal 和 ubuntu terminal 之间是彼此不通的。
 
 >参考：https://kubernetes.io/zh/docs/tasks/tools/install-kubectl/
 
