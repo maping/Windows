@@ -79,7 +79,7 @@ wmic process where caption="java.exe" get caption,commandline /value
 - jar -tvf ehcache.war 
 3. 解压压缩文件：jar -xvf 压缩文件
 
-## 7. 解决 cmd 窗口中文字符乱码问题
+## 7. 解决 cmd terminal 中文字符乱码问题
 - 查看 cmd 窗口字符编码: chcp 
 - 修改 cmd 窗口字符编码: chcp <字符编码>
 - 字符编码对应代码:
