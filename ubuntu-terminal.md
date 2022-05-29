@@ -9,10 +9,10 @@ Win + R，然后输入 ubuntu 输入个人账户的口令，进入个人账户�
 ## 3. 在 Ubuntu Terminal 中安装软件
 
 ### 3.1 安装 kubectl
-安装并配置 kubectl | Kubernetes
-
-1. curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
-curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.20.1/bin/linux/amd64/kubectl"
+```console
+$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.20.1/bin/linux/amd64/kubectl"
+```
 
 ## 4. 疑问
 - Ubuntu Terminal 原理，内嵌了一个 Ubuntu 在 Windows 中，那里面做的操作怎么保留 ？
