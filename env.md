@@ -1,4 +1,4 @@
-# Windows 下开发环境设置
+# Windows 下开发环境设置 (2022-05-29 更新，新电脑需要重新更新和确认所有步骤)
 
 ## 1. 一键显示环境变量窗口
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
