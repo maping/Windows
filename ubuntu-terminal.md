@@ -13,7 +13,13 @@ Win + R，然后输入 ubuntu 输入个人账户的口令，进入个人账户�
 $ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
 1.24.1
 $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.24.1/bin/linux/amd64/kubectl"
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 43.5M  100 43.5M    0     0  11.6M      0  0:00:03  0:00:03 --:--:-- 11.6M
 $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 43.5M  100 43.5M    0     0  7237k      0  0:00:06  0:00:06 --:--:-- 9018k
 ```
 
 ## 4. 疑问
