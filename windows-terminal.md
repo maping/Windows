@@ -6,7 +6,7 @@
 
 ## 2. Terminal 之间切换
 - 从 Windows Terminal 切换到 Ubuntu Terminal: wsl
-- 从 Windows Terminal 切换到 CMD Terminal： cmd
+- 从 Windows Terminal 切换到 CMD Terminal: cmd
 
 # 怎么分屏窗口，并创建快捷方式
 	二分屏快捷方式
