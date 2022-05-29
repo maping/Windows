@@ -8,11 +8,13 @@
 - 从 Windows Terminal 切换到 Ubuntu Terminal: wsl
 - 从 Windows Terminal 切换到 CMD Terminal: cmd
 
-# 怎么分屏窗口，并创建快捷方式
-	二分屏快捷方式
-	三分屏快捷方式
-	四分屏快捷方式
-# 删除文件时，如果提示 Permission Denyed，可能是因为有其它程序在使用该文件
+## 3. 窗口分屏，并创建快捷方式
+- Alt + Shift + D, 持续分屏
+
+shift+alt+"+" 横向分屏一个
+shift+alt+"-" 竖向分屏一个
+
+## 4. 删除文件时，如果提示 Permission Denyed，可能是因为有其它程序在使用该文件
 
 #  Ctrl + Shift + F ，显示搜索框 
 
@@ -22,9 +24,7 @@
 
 # Ctrl + Shift + W , 关闭 windows
 
-# Alt + Shift + D , SplitPane 分屏
-shift+alt+"+" 横向分屏一个
-shift+alt+"-" 竖向分屏一个
+
 
 # Ctrl + Shift + P ，显示命令行窗口
 # Alt + F4 ，关闭整个 Application
