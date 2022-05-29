@@ -4,9 +4,9 @@
 在 Microsoft Store 搜索 windows terminal
 
 ## 2. Terminal 之间切换
-- 从 Windows Terminal 切换到 Ubuntu Terminal: ubuntu
-- 从 Windows Terminal 切换到 CMD Terminal: cmd
-- 从其它 Terminal 切换到 Windows Terminal: wsl
+- 从 Windows Powershell 切换到 Ubuntu Terminal: ubuntu，输入个人账户的口令，进入个人账户主目录：/home/maping
+- 从 Windows Powershell 切换到 CMD Terminal: cmd
+- 从 Windows Powershell 切换到 Linux Terminal: wsl，输入个人账户的口令，进入的是个人 Windows 账户主目录：/mnt/c/Users/pinm
 
 ## 3. 窗口分屏，并创建快捷方式
 - Alt + Shift + D 以先左右，后上下方式持续分屏
