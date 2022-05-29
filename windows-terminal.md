@@ -7,6 +7,7 @@
 - 从 Windows Powershell 切换到 Ubuntu Terminal: ubuntu，输入个人账户的口令，进入个人账户主目录：/home/maping
 - 从 Windows Powershell 切换到 CMD Terminal: cmd
 - 从 Windows Powershell 切换到 Linux Terminal: wsl/bash，输入个人账户的口令，进入的是个人 Windows 账户主目录：/mnt/c/Users/pinm
+>说明：wsl 是 windows subsystem linux 的缩写。
 
 ## 3. 窗口分屏，并创建快捷方式
 - Alt + Shift + D 以先左右，后上下方式持续分屏
