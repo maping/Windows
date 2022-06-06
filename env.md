@@ -127,6 +127,9 @@ Ubuntu-20.04    Ubuntu 20.04 LTS
 ``` console
 $ docker --version
 Docker version 20.10.16, build aa7e414
+$ where docker
+C:\Program Files\Docker\Docker\resources\bin\docker
+C:\Program Files\Docker\Docker\resources\bin\docker.exe
 ```
 - 运行 helloworld：打开 cmd 命令窗口，`docker run hello-world`
 ``` console
