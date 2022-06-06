@@ -205,6 +205,21 @@ Docker Desktop for Windows 本身自带 kubectl
 $ where kubectl
 C:\Software\Google\Kubernetes\kubectl.exe
 C:\Program Files\Docker\Docker\resources\bin\kubectl.exe
+$ cd C:\Program Files\Docker\Docker\resources\bin
+$ kubectl version -o yaml
+clientVersion:
+  buildDate: "2022-05-03T13:46:05Z"
+  compiler: gc
+  gitCommit: 4ce5a8954017644c5420bae81d72b09b735c21f0
+  gitTreeState: clean
+  gitVersion: v1.24.0
+  goVersion: go1.18.1
+  major: "1"
+  minor: "24"
+  platform: windows/amd64
+kustomizeVersion: v4.5.4
+
+Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
 ```
 >注意：请把手工安装的 kubectl 的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
  
@@ -216,7 +231,7 @@ $ which kubectl
 $ ll /usr/local/bin/kubectl
 lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
 ```
->重要：因为 kubectl 是绿色安装，Windows 下 cmd terminal 和 ubuntu terminal 之间是彼此不通的。
+>重要：Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
 
 ## 8. Azure 开发环境 ✅
 
