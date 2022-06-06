@@ -83,6 +83,17 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 ## 7. 容器开发环境 ✅
 
+C:\Windows\system32>wsl --install
+Installing: Virtual Machine Platform
+Virtual Machine Platform has been installed.
+Installing: Windows Subsystem for Linux
+Windows Subsystem for Linux has been installed.
+Downloading: WSL Kernel
+Installing: WSL Kernel
+WSL Kernel has been installed.
+Downloading: Ubuntu
+The requested operation is successful. Changes will not be effective until the system is rebooted.
+
 ### 7.1 安装和配置 Docker Desktop ✅
 >重要：Docker for Windows 目前只支持 Windows 10 和 Windows Server 2016，不支持 Windows 7。
 
