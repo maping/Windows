@@ -205,9 +205,15 @@ and let us know if you're interested in trying out our newest features: https://
 ```  
 
 ### 8.2 安装和配置 Azure Function CLI ✅
-
+- [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools)
+- 检查安装是否正确：打开 cmd 命令窗口，`func --version`
+``` console
+$ func --version
+4.0.4544
+```
 ## 9. AWS 开发环境
 
 ## 安装 Terraform
 - 下载 [Teffaform](https://www.terraform.io/downloads.html)
+
 
