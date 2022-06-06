@@ -84,6 +84,9 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ## 7. 容器开发环境 ✅
 
 ### 7.1 Install Linux on Windows with WSL
+[Install Linux on Windows with WSL](：https://docs.microsoft.com/en-us/windows/wsl/install) 是安装 Docker 的前置条件。
+
+以管理员身份打开 cmd terminal
 ```console
 C:\Windows\system32>wsl --install
 Installing: Virtual Machine Platform
@@ -95,6 +98,24 @@ Installing: WSL Kernel
 WSL Kernel has been installed.
 Downloading: Ubuntu
 The requested operation is successful. Changes will not be effective until the system is rebooted.
+```
+>重要：重启机器，然后 ubuntu 会继续安装，输入用户名 maping/maping。
+
+要想安装其它 Linux，首先查看可以安装的 Linux 列表
+```console
+wsl --list --online
+The following is a list of valid distributions that can be installed.
+Install using 'wsl --install -d <Distro>'.
+
+NAME            FRIENDLY NAME
+Ubuntu          Ubuntu
+Debian          Debian GNU/Linux
+kali-linux      Kali Linux Rolling
+openSUSE-42     openSUSE Leap 42
+SLES-12         SUSE Linux Enterprise Server v12
+Ubuntu-16.04    Ubuntu 16.04 LTS
+Ubuntu-18.04    Ubuntu 18.04 LTS
+Ubuntu-20.04    Ubuntu 20.04 LTS
 ```
 
 ### 7.2 安装和配置 Docker Desktop ✅
