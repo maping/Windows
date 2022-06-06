@@ -119,37 +119,22 @@ Ubuntu-20.04    Ubuntu 20.04 LTS
 ```
 
 ### 7.2 安装和配置 Docker Desktop ✅
->重要：Docker for Windows 目前只支持 Windows 10 和 Windows Server 2016，不支持 Windows 7。
+>重要：Docker for Windows 目前只支持在服务支持期内的 Windows 10 。
 
-- 下载 [Docker](https://docs.docker.com/docker-for-windows/install/) ，点击 Get Docker for Windows (Stable)
-- 安装 Docker for Windows 10 
-
-    - 安装过程中会提示需要开启 Hyper-V 功能，点击 OK 后，完成设置后会自动重启机器。
-    ![image](./images/env-windows-10-01.png)
-    - 控制面板 -> 程序 -> 程序和功能，点击"启用或关闭 Windows 功能"，勾选中 "Hyper-V"
-    ![image](./images/env-windows-10-02.png)
-    - 确认 Virtualization 已经开启
-    ![image](./images/env-windows-10-03.png)
-
--	检查安装是否正确：打开 cmd 命令窗口，`docker --version`
+- 下载 [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/) 
+- 双击 Docker Desktop Installer.exe 开始安装，安装过程保持默认选项即可
+- 检查安装是否正确：打开 cmd 命令窗口，`docker --version`
 ``` console
 $ docker --version
-Docker version 20.10.11, build dea9396
+Docker version 20.10.16, build aa7e414
 ```
--	配置容器镜像加速器 (如果你的环境下，下载 Docker 镜像速度足够快，此步可以免做)
-    ![image](./images/env-windows-10-04.png)
-
-    - https://bowubc7e.mirror.aliyuncs.com   
-    - http://07ddb7e7.m.daocloud.io  
-    - http://maping930883.m.alauda.cn
-
--	检查安装是否正确：打开 cmd 命令窗口，`docker run hello-world`
+- 运行 helloworld：打开 cmd 命令窗口，`docker run hello-world`
 ``` console
 $ docker run hello-world
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-0e03bdcc26d7: Pull complete
-Digest: sha256:e7c70bb24b462baa86c102610182e3efcb12a04854e8c582838d92970a09f323
+2db29710123e: Pull complete
+Digest: sha256:80f31da1ac7b312ba29d65080fddf797dd76acfb870e677f390d5acba9741b17
 Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
@@ -173,7 +158,7 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
  ``` 
-
+ 
 ### 7.3 安装 kubectl ✅
 - 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
