@@ -1,30 +1,30 @@
-# Windows 下开发环境设置 (2022-05-29 更新，新电脑需要重新更新和确认所有步骤)
+# Windows 下开发环境设置 (2022-06-06 更新)
 
-## 1. 一键显示环境变量窗口
+## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
 2. 右键 Run as administrator，可以添加修改 System Variables
 
-## 2. 安装 Git
+## 2. 安装 Git ✅
 - 下载 [Git](https://git-scm.com/download/win) 
 -	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
 ``` console
 $ git --version
-git version 2.32.0.windows.1
+git version 2.36.1.windows.1
 ```
 
-## 3. 安装和配置 FileZilla
+## 3. 安装和配置 FileZilla ✅
 - 下载 [FileZilla](https://filezilla-project.org/download.php) 
 >注意: 不能直接下载 .exe 文件，安全检查会报告有 virus，不让下载。
 
-## 4. 安装和配置 MobaXterm
+## 4. 安装和配置 MobaXterm ✅
 - 下载 [MobaXterm](https://mobaxterm.mobatek.net/download.html) 
 
-## 5. 安装和配置 WinSCP
+## 5. 安装和配置 WinSCP ✅
 - 下载 [WinSCP](https://winscp.net/eng/download.php) 
 
 ## 3. Java 开发环境
 
-### 3.1 安装和配置 Open JDK
+### 3.1 安装和配置 Open JDK ✅
 - 下载 [Open JDK](https://openjdk.java.net/)
 - 解压缩：openjdk-17_windows-x64_bin.zip
 - 设置环境变量 JAVA_HOME，例如：C:\software\java\openjdk
