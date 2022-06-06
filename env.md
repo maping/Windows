@@ -84,7 +84,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ## 7. 容器开发环境 ✅
 
 ### 7.1 Install Linux on Windows with WSL
-[Install Linux on Windows with WSL](：https://docs.microsoft.com/en-us/windows/wsl/install) 是安装 Docker 的前置条件。
+[Install Linux on Windows with WSL](https://docs.microsoft.com/en-us/windows/wsl/install) 是安装 Docker 的前置条件。
 
 以管理员身份打开 cmd terminal
 ```console
