@@ -163,7 +163,8 @@ For more examples and ideas, visit:
  ``` 
  
 ### 7.3 安装 kubectl ✅
-- 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
+- [Install kubectl binary with curl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
+eneccccvflffhihlgfttfdfkr- 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
     - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
     - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.24.1/bin/windows/amd64/kubectl.exe
@@ -192,8 +193,6 @@ Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection c
 >说明：Docker Desktop for Windows 会在 PATH（C:\Program Files\Docker\Docker\resources\bin）中添加自己的 kubectl 程序。 如果你之前安装过 Docker Desktop，你可能需要将新安装的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
 
 >重要：因为 kubectl 是绿色安装，Windows 下 cmd terminal 和 ubuntu terminal 之间是彼此不通的。
-
->参考：https://kubernetes.io/zh/docs/tasks/tools/install-kubectl/
 
 ## 8. Azure 开发环境 ✅
 
