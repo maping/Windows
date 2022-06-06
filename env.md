@@ -14,13 +14,14 @@ git version 2.36.1.windows.1
 
 ## 3. 安装和配置 FileZilla ✅
 - 下载 [FileZilla](https://filezilla-project.org/download.php) 
->注意: 不能直接下载 .exe 文件，安全检查会报告有 virus，不让下载。
+>注意: 不能直接下载 .exe 文件，安全检查会报告有 virus，不让下载，可以下载 FileZilla_3.60.1_win64.zip。
 
 ## 4. 安装和配置 MobaXterm ✅
 - 下载 [MobaXterm](https://mobaxterm.mobatek.net/download.html) 
+>说明：下载 MobaXterm_Portable_v22.0.zip
 
 ## 5. 安装和配置 WinSCP ✅
-- 下载 [WinSCP](https://winscp.net/eng/download.php) 
+- 下载 [WinSCP 5.19.6](https://winscp.net/eng/download.php) 
 
 ## 3. Java 开发环境
 
