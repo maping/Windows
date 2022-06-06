@@ -79,9 +79,9 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 ## 6. Go 开发环境
 
-## 7. 容器开发环境
+## 7. 容器开发环境 ✅
 
-### 7.1 安装和配置 Docker Desktop 
+### 7.1 安装和配置 Docker Desktop ✅
 >重要：Docker for Windows 目前只支持 Windows 10 和 Windows Server 2016，不支持 Windows 7。
 
 - 下载 [Docker](https://docs.docker.com/docker-for-windows/install/) ，点击 Get Docker for Windows (Stable)
@@ -137,12 +137,12 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
  ``` 
 
-### 7.2 安装 kubectl 
+### 7.2 安装 kubectl ✅
 - 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
     - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
-    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.4/bin/windows/amd64/kubectl.exe
-    - VERSION-TAG 取值为版本号，比如：v1.23.4
+    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.24.1/bin/windows/amd64/kubectl.exe
+    - VERSION-TAG 取值为版本号，比如：v1.24.1
     - OS 取值可以为 darwin, linux, windows
     - ARCH 取值可以为 386, amd64
 - 设置环境变量 PATH，增加一条，C:\Software\Google\Kubernetes 
@@ -160,32 +160,26 @@ Server Version: version.Info{Major:"1", Minor:"20", GitVersion:"v1.20.7", GitCom
 
 >参考：https://kubernetes.io/zh/docs/tasks/tools/install-kubectl/
 
-## 8. Azure 开发环境
+## 8. Azure 开发环境 ✅
 
-### 8.1 安装和配置 Azure CLI
+### 8.1 安装和配置 Azure CLI ✅
 - 下载 [Azure CLI](https://aka.ms/InstallAzureCliWindows) 
 - 检查安装是否正确：打开 cmd 命令窗口，`az --version`
 ``` console
 $ az --version
-azure-cli                         2.35.0
+azure-cli                         2.37.0
 
-core                              2.35.0
+core                              2.37.0
 telemetry                          1.0.6
 
-Extensions:
-azure-firewall                    0.12.0
-containerapp                       0.2.2
-log-analytics                      0.2.2
-spring-cloud                      2.10.0
-
 Dependencies:
-msal                              1.17.0
-azure-mgmt-resource               20.0.0
+msal                            1.18.0b1
+azure-mgmt-resource             21.1.0b1
 
 Python location 'C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\python.exe'
-Extensions directory 'C:\Users\pinm\.azure\cliextensions'
+Extensions directory 'C:\Users\vmaping\.azure\cliextensions'
 
-Python (Windows) 3.10.3 (tags/v3.10.3:a342a49, Mar 16 2022, 12:53:06) [MSC v.1929 32 bit (Intel)]
+Python (Windows) 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 22:57:10) [MSC v.1929 32 bit (Intel)]
 
 Legal docs and information: aka.ms/AzureCliLegal
 
@@ -196,7 +190,7 @@ Please let us know how we are doing: https://aka.ms/azureclihats
 and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
 ```  
 
-### 8.2 安装和配置 Azure Function CLI
+### 8.2 安装和配置 Azure Function CLI ✅
 
 ## 9. AWS 开发环境
 
