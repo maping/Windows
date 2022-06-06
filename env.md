@@ -14,7 +14,7 @@ git version 2.36.1.windows.1
 
 ## 3. 安装和配置 FileZilla ✅
 - 下载 [FileZilla](https://filezilla-project.org/download.php) 
->注意: 不能直接下载 .exe 文件，安全检查会报告有 virus，不让下载，可以下载 FileZilla_3.60.1_win64.zip。
+>注意: 不能直接下载 .exe 文件，安全检查会报告有 virus，可以下载 FileZilla_3.60.1_win64.zip。
 
 ## 4. 安装和配置 MobaXterm ✅
 - 下载 [MobaXterm](https://mobaxterm.mobatek.net/download.html) 
@@ -27,41 +27,44 @@ git version 2.36.1.windows.1
 
 ### 3.1 安装和配置 Open JDK ✅
 - 下载 [Open JDK](https://openjdk.java.net/)
-- 解压缩：openjdk-17_windows-x64_bin.zip
-- 设置环境变量 JAVA_HOME，例如：C:\software\java\openjdk
+- 解压缩：openjdk-17+35_windows-x64_bin.zip
+- 设置环境变量 JAVA_HOME，例如：C:\Software\java\openjdk
 - 设置环境变量 PATH，增加一条，%JAVA_HOME%\bin
 - 检查安装是否正确：打开一个 cmd 窗口，输入 `java -version`
 
 ``` console
 $ java -version
-openjdk 17 2021-09-14
+Picked up JAVA_TOOL_OPTIONS: -Dlog4j2.formatMsgNoLookups=true
+openjdk version "17" 2021-09-14
 OpenJDK Runtime Environment (build 17+35-2724)
 OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
 ```
 
 ### 3.2 安装和配置 Ant
 - 下载 [Ant](https://ant.apache.org/bindownload.cgi)
-- 解压缩：apache-ant-1.10.10-bin.zip
-- 设置环境变量 ANT_HOME，例如：C:\software\apache\ant
+- 解压缩：apache-ant-1.10.12-bin.zip
+- 设置环境变量 ANT_HOME，例如：C:\Software\apache\ant
 - 设置环境变量 PATH，增加一条，%ANT_HOME%\bin
 - 检查安装是否正确：打开一个 cmd 窗口，输入 `ant -version`
 ``` console
 $ ant -version
-Apache Ant(TM) version 1.10.10 compiled on April 12 2021
+Picked up JAVA_TOOL_OPTIONS: -Dlog4j2.formatMsgNoLookups=true
+Apache Ant(TM) version 1.10.12 compiled on October 13 2021
 ```
 
 ### 3.3 安装和配置 Maven
 - 下载 [Maven](https://maven.apache.org/download.cgi)
-- 解压缩：apache-maven-3.8.2-bin.zip
--	设置环境变量 M2_HOME，例如：C:\software\apache\maven
+- 解压缩：apache-maven-3.8.5-bin.zip
+- 设置环境变量 M2_HOME，例如：C:\Software\apache\maven
 - 设置环境变量 PATH，增加一条，%M2_HOME%\bin 
 - 设置环境变量 MAVEN_OPTS，例如：-Xms512m -Xmx1024m
 - 检查安装是否正确：打开 cmd 命令窗口，`mvn -version`
 ``` console
 $ mvn -version
-Apache Maven 3.8.2 (ea98e05a04480131370aa0c110b8c54cf726c06f)
-Maven home: C:\software\apache\maven
-Java version: 17, vendor: Oracle Corporation, runtime: C:\software\java\openjdk
+Picked up JAVA_TOOL_OPTIONS: -Dlog4j2.formatMsgNoLookups=true
+Apache Maven 3.8.5 (3599d3414f046de2324203b78ddcf9b5e4388aa0)
+Maven home: C:\Software\Apache\maven
+Java version: 17, vendor: Oracle Corporation, runtime: C:\Software\java\openjdk
 Default locale: en_US, platform encoding: GBK
 OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ```
