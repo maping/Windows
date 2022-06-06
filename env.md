@@ -71,9 +71,11 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 ## 4. .NET 开发环境
 
-### 4.1 .NET Framework 开发环境
+### 4.1 .NET Framework 开发环境 ✅
+下载并安装 Vistual Studio 2019
 
 ### 4.2 .NET 开发环境
+下载并安装 Vistual Studio 2022
 
 ## 5. Python 开发环境
 
@@ -146,10 +148,22 @@ For more examples and ideas, visit:
     - OS 取值可以为 darwin, linux, windows
     - ARCH 取值可以为 386, amd64
 - 设置环境变量 PATH，增加一条，C:\Software\Google\Kubernetes 
-- 检查安装是否正确：打开 cmd 命令窗口，```kubectl version```
+- 检查安装是否正确：打开 cmd 命令窗口，```kubectl version -o yaml```
 ```console
-$ kubectl version --client
-Client Version: version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.4", GitCommit:"e6c093d87ea4cbb530a7b2ae91e54c0842d8308a", GitTreeState:"clean", BuildDate:"2022-02-16T12:38:05Z", GoVersion:"go1.17.7", Compiler:"gc", Platform:"windows/amd64"}
+$ kubectl version -o yaml
+clientVersion:
+  buildDate: "2022-05-24T12:26:19Z"
+  compiler: gc
+  gitCommit: 3ddd0f45aa91e2f30c70734b175631bec5b5825a
+  gitTreeState: clean
+  gitVersion: v1.24.1
+  goVersion: go1.18.2
+  major: "1"
+  minor: "24"
+  platform: windows/amd64
+kustomizeVersion: v4.5.4
+
+Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
 $ kubectl version
 Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.2", GitCommit:"092fbfbf53427de67cac1e9fa54aaa09a28371d7", GitTreeState:"clean", BuildDate:"2021-06-16T12:59:11Z", GoVersion:"go1.16.5", Compiler:"gc", Platform:"windows/amd64"}
 Server Version: version.Info{Major:"1", Minor:"20", GitVersion:"v1.20.7", GitCommit:"6b3f9b283463c1d5a2455df301182805e65c7145", GitTreeState:"clean", BuildDate:"2021-05-19T22:28:47Z", GoVersion:"go1.15.12", Compiler:"gc", Platform:"linux/amd64"}
