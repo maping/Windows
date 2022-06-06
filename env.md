@@ -83,6 +83,8 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 ## 7. 容器开发环境 ✅
 
+### 7.1 Install Linux on Windows with WSL
+```console
 C:\Windows\system32>wsl --install
 Installing: Virtual Machine Platform
 Virtual Machine Platform has been installed.
@@ -93,8 +95,9 @@ Installing: WSL Kernel
 WSL Kernel has been installed.
 Downloading: Ubuntu
 The requested operation is successful. Changes will not be effective until the system is rebooted.
+```
 
-### 7.1 安装和配置 Docker Desktop ✅
+### 7.2 安装和配置 Docker Desktop ✅
 >重要：Docker for Windows 目前只支持 Windows 10 和 Windows Server 2016，不支持 Windows 7。
 
 - 下载 [Docker](https://docs.docker.com/docker-for-windows/install/) ，点击 Get Docker for Windows (Stable)
@@ -150,7 +153,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
  ``` 
 
-### 7.2 安装 kubectl ✅
+### 7.3 安装 kubectl ✅
 - 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
     - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
