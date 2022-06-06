@@ -164,9 +164,7 @@ clientVersion:
 kustomizeVersion: v4.5.4
 
 Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
-$ kubectl version
-Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.2", GitCommit:"092fbfbf53427de67cac1e9fa54aaa09a28371d7", GitTreeState:"clean", BuildDate:"2021-06-16T12:59:11Z", GoVersion:"go1.16.5", Compiler:"gc", Platform:"windows/amd64"}
-Server Version: version.Info{Major:"1", Minor:"20", GitVersion:"v1.20.7", GitCommit:"6b3f9b283463c1d5a2455df301182805e65c7145", GitTreeState:"clean", BuildDate:"2021-05-19T22:28:47Z", GoVersion:"go1.15.12", Compiler:"gc", Platform:"linux/amd64"}
+
 ```
 >说明：Docker Desktop for Windows 会在 PATH（C:\Program Files\Docker\Docker\resources\bin）中添加自己的 kubectl 程序。 如果你之前安装过 Docker Desktop，你可能需要将新安装的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
 
@@ -215,5 +213,3 @@ $ func --version
 
 ## 安装 Terraform
 - 下载 [Teffaform](https://www.terraform.io/downloads.html)
-
-
