@@ -74,7 +74,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ### 4.1 .NET Framework 开发环境 ✅
 下载并安装 Vistual Studio 2019
 
-### 4.2 .NET 开发环境
+### 4.2 .NET Core | .NET 6 开发环境
 下载并安装 Vistual Studio 2022
 
 ## 5. Python 开发环境
