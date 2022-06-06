@@ -101,7 +101,7 @@ The requested operation is successful. Changes will not be effective until the s
 ```
 >重要：重启机器，然后 ubuntu 会继续安装，输入用户名 maping/maping。
 
-要想安装其它 Linux，首先查看可以安装的 Linux 列表
+默认 WSL 安装的是 Ubuntu，要想安装其它 Linux，首先查看可以安装的 Linux 列表
 ```console
 wsl --list --online
 The following is a list of valid distributions that can be installed.
