@@ -162,7 +162,17 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
  ``` 
  
-### 7.3 安装 kubectl ✅
+### 7.3 在 ubuntu terminal 中确认 docker 也已经安装 ✅
+``` console
+$ docker --version
+Docker version 20.10.16, build aa7e414
+$ which docker
+$ ll /usr/bin/docker
+lrwxrwxrwx 1 root root 48 Jun  6 22:13 /usr/bin/docker -> /mnt/wsl/docker-desktop/cli-tools/usr/bin/docker*
+```
+>注意：发现跟 cmd terminal 中的 Docker 版本一致，那以后更新 Docker Desktop for Windows，是不是 ubuntu terminal 中的 Docker 也会随之更新？
+
+### 7.4 安装 kubectl ✅
 - [Install kubectl binary with curl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 - 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
@@ -188,10 +198,24 @@ clientVersion:
 kustomizeVersion: v4.5.4
 
 Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
-
 ```
->说明：Docker Desktop for Windows 会在 PATH（C:\Program Files\Docker\Docker\resources\bin）中添加自己的 kubectl 程序。 如果你之前安装过 Docker Desktop，你可能需要将新安装的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
 
+Docker Desktop for Windows 本身自带 kubectl
+```console
+$ where kubectl
+C:\Software\Google\Kubernetes\kubectl.exe
+C:\Program Files\Docker\Docker\resources\bin\kubectl.exe
+```
+>注意：请把手工安装的 kubectl 的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
+ 
+### 7.5 在 ubuntu terminal 中确认 kubectl 也已经安装 ✅
+Docker Desktop for Windows 也会在 ubuntu terminal 中安装一个 kubectl
+```console
+$ which kubectl
+/usr/local/bin/kubectl
+$ ll /usr/local/bin/kubectl
+lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
+```
 >重要：因为 kubectl 是绿色安装，Windows 下 cmd terminal 和 ubuntu terminal 之间是彼此不通的。
 
 ## 8. Azure 开发环境 ✅
