@@ -231,7 +231,7 @@ $ which kubectl
 $ ll /usr/local/bin/kubectl
 lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
 ```
->重要：Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
+>重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
 
 ## 8. Azure 开发环境 ✅
 
@@ -261,7 +261,10 @@ Your CLI is up-to-date.
 
 Please let us know how we are doing: https://aka.ms/azureclihats
 and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
-```  
+$ which az
+/mnt/c/Program Files (x86)/Microsoft SDKs/Azure/CLI2/wbin/az
+``` 
+>说明：az 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 中是同一个 az。
 
 ### 8.2 安装和配置 Azure Function CLI ✅
 - [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools)
@@ -269,7 +272,11 @@ and let us know if you're interested in trying out our newest features: https://
 ``` console
 $ func --version
 4.0.4544
+$ where func
+C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 ```
+>说明：func 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 要分别单独安装。
+
 ## 9. AWS 开发环境
 
 9.1 安装和配置 AWS CLI ✅
@@ -280,5 +287,3 @@ $ aws --version
 aws-cli/1.25.13 Python/3.8.10 Windows/10 botocore/1.27.13
 ``` 
 
-## 安装 Terraform
-- 下载 [Teffaform](https://www.terraform.io/downloads.html)
