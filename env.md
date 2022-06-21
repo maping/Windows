@@ -272,5 +272,13 @@ $ func --version
 ```
 ## 9. AWS 开发环境
 
+9.1 安装和配置 AWS CLI ✅
+- 下载 [AWS CLI](https://s3.amazonaws.com/aws-cli/AWSCLI64.msi)
+- 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
+``` console
+$ aws --version
+aws-cli/1.25.13 Python/3.8.10 Windows/10 botocore/1.27.13
+``` 
+
 ## 安装 Terraform
 - 下载 [Teffaform](https://www.terraform.io/downloads.html)
