@@ -8,7 +8,7 @@
 - 下载 [Git](https://git-scm.com/download/win) 
 -	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
 ``` console
-$ git --version
+C:\Users\vmaping> git --version
 git version 2.36.1.windows.1
 ```
 
