@@ -280,10 +280,11 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 ## 9. AWS 开发环境
 
 9.1 安装和配置 AWS CLI ✅
-- 下载 [AWS CLI](https://s3.amazonaws.com/aws-cli/AWSCLI64.msi)
+- 下载 [AWS CLI](https://awscli.amazonaws.com/AWSCLIV2.msi)
 - 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
 ``` console
 $ aws --version
-aws-cli/1.25.13 Python/3.8.10 Windows/10 botocore/1.27.13
+aws-cli/2.7.9 Python/3.9.11 Windows/10 exe/AMD64 prompt/off
 ``` 
+>重要：建议下载 AWS CLI 2，AWS CLI 2 和 1 不兼容，新功能只增加到 AWS CLI 2 上。
 
