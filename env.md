@@ -292,7 +292,7 @@ C:\Program Files\Amazon\AWSCLIV2\aws.exe
 
 ### 9.2 使用 Docker 运行 AWS CLI ✅
 ``` console
-$ aws --version
+$ docker run --rm -it amazon/aws-cli --version
 Unable to find image 'amazon/aws-cli:latest' locally
 latest: Pulling from amazon/aws-cli
 8de5b65bd171: Pull complete
