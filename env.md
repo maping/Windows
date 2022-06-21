@@ -279,7 +279,7 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 
 ## 9. AWS 开发环境
 
-9.1 安装和配置 AWS CLI ✅
+### 9.1 安装和配置 AWS CLI ✅
 - 下载 [AWS CLI](https://awscli.amazonaws.com/AWSCLIV2.msi)
 - 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
 ``` console
@@ -290,3 +290,17 @@ C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
 >重要：建议下载 AWS CLI 2，AWS CLI 2 和 1 不兼容，新功能只增加到 AWS CLI 2 上。
 
+### 9.2 使用 Docker 运行 AWS CLI ✅
+``` console
+$ aws --version
+Unable to find image 'amazon/aws-cli:latest' locally
+latest: Pulling from amazon/aws-cli
+8de5b65bd171: Pull complete
+6081874c50da: Pull complete
+f346e31030cb: Pull complete
+cd4e94fb04e7: Pull complete
+71c2536d7d65: Pull complete
+Digest: sha256:c95ab2277ee36252dd31b7c50a6a3e82eb558089618bfd22308f8e0da3d753c3
+Status: Downloaded newer image for amazon/aws-cli:latest
+aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_64.amzn.2 prompt/off
+```
