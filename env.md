@@ -285,6 +285,8 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 ``` console
 $ aws --version
 aws-cli/2.7.9 Python/3.9.11 Windows/10 exe/AMD64 prompt/off
+$ where aws
+C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
 >重要：建议下载 AWS CLI 2，AWS CLI 2 和 1 不兼容，新功能只增加到 AWS CLI 2 上。
 
