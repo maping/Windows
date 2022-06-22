@@ -245,7 +245,7 @@ lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker
 
 直接下载 [kind-windows-amd64](https://github.com/kubernetes-sigs/kind)，改名为 kind.exe，放到 PATH 路径下。
 
-创建 Kubernetes Cluster: dev
+打开 PowerShell terminal，创建 Kubernetes Cluster: dev
 ```console
 $ kind create cluster --name dev
 Creating cluster "dev" ...
@@ -268,7 +268,7 @@ kubectl cluster-info --context kind-dev
 
 Have a nice day! 👋
 ```
-创建 Kubernetes Cluster: test
+打开 PowerShell terminal，创建 Kubernetes Cluster: test
 ```console
 Creating cluster "test" ...
  • Ensuring node image (kindest/node:v1.24.0) 🖼  ...
@@ -291,13 +291,20 @@ kubectl cluster-info --context kind-test
 Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/#community 🙂
 ```
 
-创建 Kubernetes Cluster: prod
-
+打开 PowerShell terminal
 ```console
+$ kubectl config get-contexts
+CURRENT   NAME             CLUSTER          AUTHINFO         NAMESPACE
+          docker-desktop   docker-desktop   docker-desktop
+          kind-dev         kind-dev         kind-dev
+*         kind-test        kind-test        kind-test
 $ docker ps
 CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS                       NAMES
 91f1141a2c7f   kindest/node:v1.24.0   "/usr/local/bin/entr…"   33 seconds ago   Up 27 seconds   127.0.0.1:64501->6443/tcp   test-control-plane
 c4798142e03d   kindest/node:v1.24.0   "/usr/local/bin/entr…"   3 minutes ago    Up 3 minutes    127.0.0.1:64433->6443/tcp   dev-control-plane
+$ kubectl get nodes
+NAME                 STATUS   ROLES           AGE    VERSION
+test-control-plane   Ready    control-plane   161m   v1.24.0
 ```
 
 ## 8. Azure 开发环境 ✅
