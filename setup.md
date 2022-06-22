@@ -233,6 +233,14 @@ lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker
 ```
 >重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
 
+### 7.6 安装 kind
+
+直接下载 kind-windows-amd64，改名为 kind.exe，放到 PATH 路径下。
+
+[Kind](https://kind.sigs.k8s.io/)
+
+[Github Kind](https://github.com/kubernetes-sigs/kind)
+
 ## 8. Azure 开发环境 ✅
 
 ### 8.1 安装和配置 Azure CLI ✅
