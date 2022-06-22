@@ -241,13 +241,38 @@ lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker
 ```
 >重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
 
-### 7.6 安装 kind
+### 7.6 安装 [kind](https://kind.sigs.k8s.io/)
 
-直接下载 kind-windows-amd64，改名为 kind.exe，放到 PATH 路径下。
+直接下载 [kind-windows-amd64](https://github.com/kubernetes-sigs/kind)，改名为 kind.exe，放到 PATH 路径下。
 
-[Kind](https://kind.sigs.k8s.io/)
+创建 Kubernetes Cluster: dev
+```console
+$ kind create cluster --name dev
+Creating cluster "dev" ...
+ • Ensuring node image (kindest/node:v1.24.0) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+Set kubectl context to "kind-dev"
+You can now use your cluster with:
 
-[Github Kind](https://github.com/kubernetes-sigs/kind)
+kubectl cluster-info --context kind-dev
+
+Have a nice day! 👋
+```
+创建 Kubernetes Cluster: test
+
+创建 Kubernetes Cluster: prod
+
+
 
 ## 8. Azure 开发环境 ✅
 
@@ -320,3 +345,6 @@ Digest: sha256:c95ab2277ee36252dd31b7c50a6a3e82eb558089618bfd22308f8e0da3d753c3
 Status: Downloaded newer image for amazon/aws-cli:latest
 aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_64.amzn.2 prompt/off
 ```
+
+## Reference
+
