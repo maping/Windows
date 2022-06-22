@@ -309,6 +309,7 @@ test-control-plane   Ready    control-plane   161m   v1.24.0
 ```
 
 [How to run Kubernetes locally with Kind](https://www.youtube.com/watch?v=m-IlbCgSzkc)
+[Setting up a Kubernetes cluster using kind](https://www.youtube.com/watch?v=kmTqXJW09tM)
 
 ## 8. Azure 开发环境 ✅
 
