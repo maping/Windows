@@ -270,6 +270,7 @@ Have a nice day! 👋
 ```
 打开 PowerShell terminal，创建 Kubernetes Cluster: test
 ```console
+$ kind create cluster --name test
 Creating cluster "test" ...
  • Ensuring node image (kindest/node:v1.24.0) 🖼  ...
  ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
