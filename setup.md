@@ -293,7 +293,12 @@ Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/
 
 创建 Kubernetes Cluster: prod
 
-
+```console
+$ docker ps
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS                       NAMES
+91f1141a2c7f   kindest/node:v1.24.0   "/usr/local/bin/entr…"   33 seconds ago   Up 27 seconds   127.0.0.1:64501->6443/tcp   test-control-plane
+c4798142e03d   kindest/node:v1.24.0   "/usr/local/bin/entr…"   3 minutes ago    Up 3 minutes    127.0.0.1:64433->6443/tcp   dev-control-plane
+```
 
 ## 8. Azure 开发环境 ✅
 
