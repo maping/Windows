@@ -1,4 +1,4 @@
-# Windows 下开发环境设置 (2022-06-06 更新)
+# Windows 下开发环境设置 (2022-06-22 更新)
 
 ## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
@@ -161,7 +161,15 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
  ``` 
- 
+
+打开 Docker Desktop，勾选 Kubernetes -> Enable Kubernetes，Apply & Restart
+```console
+$ kubectl get nodes
+NAME             STATUS   ROLES           AGE     VERSION
+docker-desktop   Ready    control-plane   2m57s   v1.24.0
+```
+>说明： Enable Kubernetes 后，会发现有一个单节点的 Kubernetes Cluster。
+
 ### 7.3 在 ubuntu terminal 中确认 docker 也已经安装 ✅
 ``` console
 $ docker --version
