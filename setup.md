@@ -269,6 +269,27 @@ kubectl cluster-info --context kind-dev
 Have a nice day! 👋
 ```
 创建 Kubernetes Cluster: test
+```console
+Creating cluster "test" ...
+ • Ensuring node image (kindest/node:v1.24.0) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+Set kubectl context to "kind-test"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-test
+
+Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/#community 🙂
+```
 
 创建 Kubernetes Cluster: prod
 
