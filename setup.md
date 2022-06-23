@@ -368,7 +368,15 @@ C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
 >重要：建议下载 AWS CLI 2，AWS CLI 2 和 1 不兼容，新功能只增加到 AWS CLI 2 上。
 
-### 9.2 使用 Docker 运行 AWS CLI ✅
+### 9.2 在 ubuntu terminal 中安装 AWS CLI
+```console
+$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+$ unzip awscliv2.zip
+$ sudo ./aws/install
+```
+>注意：不能连接 VPN，否则 DNS 无法解析。
+
+### 9.3 使用 Docker 运行 AWS CLI ✅
 ``` console
 $ docker run --rm -it amazon/aws-cli --version
 Unable to find image 'amazon/aws-cli:latest' locally
