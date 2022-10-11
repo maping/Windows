@@ -384,8 +384,16 @@ C:\Program Files\Amazon\AWSCLIV2\aws.exe
 $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 $ unzip awscliv2.zip
 $ sudo ./aws/install
+$ /usr/local/bin/aws --version
+aws-cli/2.8.2 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
 ```
 >注意：不能连接 VPN，否则 DNS 无法解析。
+
+更新 AWS CLI
+```console
+$ sudo ./aws/install --update
+You can now run: /usr/local/bin/aws --version
+```
 
 ### 9.3 使用 Docker 运行 AWS CLI ✅
 ``` console
