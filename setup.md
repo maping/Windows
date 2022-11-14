@@ -1,4 +1,4 @@
-# Windows 下开发环境设置 (2022-10-11 更新)
+# Windows 下开发环境设置 (2022-11-14 更新)
 
 ## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
@@ -54,7 +54,7 @@ Apache Ant(TM) version 1.10.12 compiled on October 13 2021
 
 ### 3.3 安装和配置 Maven ✅
 - 下载 [Maven](https://maven.apache.org/download.cgi)
-- 解压缩：apache-maven-3.8.5-bin.zip
+- 解压缩：apache-maven-3.8.6-bin.zip
 - 设置环境变量 M2_HOME，例如：C:\Software\apache\maven
 - 设置环境变量 PATH，增加一条，%M2_HOME%\bin 
 - 设置环境变量 MAVEN_OPTS，例如：-Xms512m -Xmx1024m
@@ -62,7 +62,7 @@ Apache Ant(TM) version 1.10.12 compiled on October 13 2021
 ``` console
 $ mvn -version
 Picked up JAVA_TOOL_OPTIONS: -Dlog4j2.formatMsgNoLookups=true
-Apache Maven 3.8.5 (3599d3414f046de2324203b78ddcf9b5e4388aa0)
+Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
 Maven home: C:\Software\Apache\maven
 Java version: 17, vendor: Oracle Corporation, runtime: C:\Software\java\openjdk
 Default locale: en_US, platform encoding: GBK
