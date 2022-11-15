@@ -10,3 +10,5 @@
 - [PowerShell Terminal](./powershell.md)
 - [Windows 启动项设置](./boot.md)
 - [连接远程 Windows 主机](./remote-desktop.md)
+- [高清录屏](./recorder.md)
+
