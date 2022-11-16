@@ -49,8 +49,8 @@ Using CATALINA_OPTS:   ""
     </servlet>
 ```
 
-## 4. 自动加载
-默认是否自动加载？
+## 4. 自动加载 Web App
+默认已经自动加载 Web App。
 
 ## 参考
 - [How to Install Apache Tomcat on Windows](https://phoenixnap.com/kb/install-tomcat-windows)
