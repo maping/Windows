@@ -40,8 +40,10 @@ nexus.hazelcast.discovery.isEnabled=true
 - Java.net 仓库：https://maven.java.net/content/groups/public/
 - JBoss 仓库：https://repository.jboss.org/maven2/
 
-## 4. 自动加载 Web App
-默认已经自动加载 Web App。
+## 4. 创建项目仓库
+- 创建 Hosted 类型仓库
+  - 创建 account-release 仓库
+  - 创建 account-snapshot 仓库
 
 ## 参考
 - [nexus 3.2 and sonatype installation, admin login and port change](https://www.youtube.com/watch?v=A8nAPgoI2hY)
