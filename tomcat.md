@@ -19,7 +19,7 @@ Tomcat 默认启动端口是 8080，配置在 conf/server.xml 中
 <user username="maping" password="maping" roles="admin-gui, manager-gui, manager-jmx, mananger-status, manager-script"/>
 ```
 
-启动，进入 bin，执行 startup，会弹出两个 cmd terminal，一个是命令行环境变量输出，一个是 Server 启动输出
+启动，进入 bin，执行 startup，会弹出两个 cmd terminal console，一个是命令行环境变量输出，一个是 Server 启动输出
 ```console
 $ startup
 Using CATALINA_BASE:   "C:\Software\Apache\tomcat"
@@ -50,9 +50,7 @@ Using CATALINA_OPTS:   ""
 ```
 
 ## 4. 自动加载
-
-Tools->Options->Java->Maven，Maven Home 指向本机的 Maven 安装目录。
+默认是否自动加载？
 
 ## 参考
 - [How to Install Apache Tomcat on Windows](https://phoenixnap.com/kb/install-tomcat-windows)
-- 
