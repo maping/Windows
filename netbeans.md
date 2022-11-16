@@ -16,4 +16,9 @@ netbeans_jdkhome="C:\Software\Java\openjdk\"
 
 Tools->Options->Java->Maven，Maven Home 指向本机的 Maven 安装目录。
 
-
+## 4. 添加 Tomcat Server
+Services->Servers，右键 Add Server...，选择 Apache Tomcat，修改名称为 Tomcat 10，
+-Server Location: C:\Software\Apache\tomcat
+-Username: maping
+-Password: maping
+添加成功后，会显示 Tomcat 10 上部署的应用列表。
