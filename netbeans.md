@@ -13,6 +13,7 @@ netbeans_jdkhome="C:\Software\Java\openjdk\"
 
 ## 3. 配置 Maven
 【最佳实践】不要用 Netbeans 自带的 Maven，而是使用本机安装的 Maven。
+
 Tools->Options->Java->Maven，Maven Home 指向本机的 Maven 安装目录。
 
 
