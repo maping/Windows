@@ -27,8 +27,10 @@ Services->Servers，右键 Add Server...，选择 Apache Tomcat，修改名称�
 ## 5. 创建一个 Web 项目
 New Project...-> Java with Maven -> Web Application，输入项目信息
 - Server: Tomcat 10
-- Java EE Version: Java EE 7 Web（这也是默认选项）
+- Java EE Version: Java EE 7 Web（这也是默认选项，说明 Tomcat 10 符合 Java EE 7 Web 标准）
 
 右键刚创建好的项目，Clean and Build，确认 BUILD SUCCESS。
 
 右键刚创建好的项目，RUN，会自动把项目发布到 Tomcat 10 上，并打开一个浏览器显示主页。
+
+随便修改一下 index.html 内容，直接刷新页面，发现内容更新了。
