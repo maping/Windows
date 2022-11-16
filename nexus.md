@@ -3,9 +3,18 @@
 ## 1. 安装 Nexus
 - 下载 [Nexus Repository OSS](https://www.sonatype.com/products/nexus-repository) ，拉到页面最下面，找到“Get Repository OSS - The Free Artifact Repository with Universal Format Support.”，点击后，注册邮箱后下载。
 - 选择 nexus-3.43.0-01-win64.zip 绿色安装版
-- 解压缩
+- 解压缩后有两个目录
+  - nexus-3.43.0-01：包含了启动 Nexus 所需要的文件，如启动脚本，依赖 jar 包等等。
+  - sonatype-work：该目录包含了 Nexus 生成的配置文件、日志文件、仓库文件。
 
 ## 2. 启动 Nexus
+进入 bin 目录
+- 前台启动 Nexus：nexus console
+- 后台启动 Nexus：nexus start
+- 后台停止 Nexus：nexus stop
+- 查看 Nexus 状态：nexus status
+- 后台重启 Nexus：nexus restart
+
 Tomcat 默认启动端口是 8080，配置在 conf/server.xml 中
 ```code
     <Connector port="8080" protocol="HTTP/1.1"
