@@ -13,19 +13,19 @@ Tomcat 默认启动端口是 8080，配置在 conf/server.xml 中
 ```
 如果想 enable directory browsing，可以修改 conf/web.xml 文件，把 file in the conf directory and edit the file with a text editor. Directory browsing helps when testing the system, and sometimes it may be the solution for a 403 forbidden error.
 ```code
-&lt;servlet&gt;
-  &lt;servlet-name&gt;default&lt;/servlet-name&gt;
-  &lt;servlet-class&gt;org.apache.catalina.servlets.DefaultServlet&lt;/servlet-class&gt;
-  &lt;init-param&gt;
-    &lt;param-name&gt;debug&lt;/param-name&gt;
-    &lt;param-value&gt;0&lt;/param-value&gt;
-  &lt;/init-param&gt;
-  &lt;init-param&gt;
-    &lt;param-name&gt;listings&lt;/param-name&gt;
-    &lt;param-value&gt;false&lt;/param-value&gt;
-  &lt;/init-param&gt;
-  &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
-&lt;/servlet&gt;
+   <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
 ```
 
 ## 3. 配置 Maven
