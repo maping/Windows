@@ -28,7 +28,7 @@ nexus-features=\
 
 nexus.hazelcast.discovery.isEnabled=true
 ```
->【最佳实践】：如果要修改端口，不要直接修改这个文件，而是创建文件 /etc/nexus.properties，在其中定义
+>【最佳实践】：如果要修改端口，不要直接修改这个文件，而是修改文件 sonatype-work\nexus3\etc\nexus.properties 中的内容
 
 访问 http://localhost:80801 管理员账户是 admin，管理员的初始密码在 sonatype-work\nexus3\admin.password 中，首次登录后，需要修改管理员密码。
 - 管理员账户口令：admin/admin123
