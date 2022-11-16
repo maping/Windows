@@ -21,4 +21,5 @@ Services->Servers，右键 Add Server...，选择 Apache Tomcat，修改名称�
 - Server Location: C:\Software\Apache\tomcat
 - Username: maping
 - Password: maping
+
 添加成功后，会显示 Tomcat 10 上部署的应用列表。
