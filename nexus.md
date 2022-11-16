@@ -9,17 +9,24 @@
 
 ## 2. 启动 Nexus
 进入 bin 目录
-- 前台启动 Nexus：nexus console
-- 后台启动 Nexus：nexus start
-- 后台停止 Nexus：nexus stop
-- 查看 Nexus 状态：nexus status
-- 后台重启 Nexus：nexus restart
+- 前台启动 Nexus：nexus /run
 
-Tomcat 默认启动端口是 8080，配置在 conf/server.xml 中
+Nexus 默认启动端口是 8081，配置在 /etc/nexus-default.properties 中
 ```code
-    <Connector port="8080" protocol="HTTP/1.1"
-               connectionTimeout="20000"
-               redirectPort="8443" />
+## DO NOT EDIT - CUSTOMIZATIONS BELONG IN $data-dir/etc/nexus.properties
+##
+# Jetty section
+application-port=8081
+application-host=0.0.0.0
+nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty-requestlog.xml
+nexus-context-path=/
+
+# Nexus section
+nexus-edition=nexus-pro-edition
+nexus-features=\
+ nexus-pro-feature
+
+nexus.hazelcast.discovery.isEnabled=true
 ```
 配置管理员权限，修改 conf/tomcat-users.xml 文件，增加以下内容：
 ```code
