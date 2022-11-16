@@ -78,4 +78,11 @@ Using CATALINA_OPTS:   ""
 默认已经自动加载 Web App。
 
 ## 参考
-- [How to Install Apache Tomcat on Windows](https://phoenixnap.com/kb/install-tomcat-windows)
+- [nexus 3.2 and sonatype installation, admin login and port change](https://www.youtube.com/watch?v=A8nAPgoI2hY)
+- [Complete Sonatype Nexus Tutorial Beginner to Advanced Part#1 of 5](https://www.youtube.com/watch?v=_tn1dDmxiBw)
+- [Complete Sonatype Nexus Tutorial Beginner to Advanced Part#2 of 5]()
+- [Complete Sonatype Nexus Tutorial Beginner to Advanced Part#3 of 5]()
+- [Complete Sonatype Nexus Tutorial Beginner to Advanced Part#4 of 5]()
+- [Complete Sonatype Nexus Tutorial Beginner to Advanced Part#5 of 5]()
+
+
