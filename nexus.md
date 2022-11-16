@@ -35,44 +35,10 @@ nexus.hazelcast.discovery.isEnabled=true
 - 是否允许匿名访问：允许
 - 是否允许识别 CVE-2021-44228 (also known as "log4shell") 漏洞：允许
 
-
-配置管理员权限，修改 conf/tomcat-users.xml 文件，增加以下内容：
-```code
-<role rolename="manager-gui"/>
-<role rolename="manager-status"/>
-<role rolename="manager-script"/>
-<user username="maping" password="maping" roles="admin-gui, manager-gui, manager-jmx, mananger-status, manager-script"/>
-```
-
-启动，进入 bin，执行 startup，会弹出两个 cmd terminal console，一个是命令行环境变量输出，一个是 Server 启动输出
-```console
-$ startup
-Using CATALINA_BASE:   "C:\Software\Apache\tomcat"
-Using CATALINA_HOME:   "C:\Software\Apache\tomcat"
-Using CATALINA_TMPDIR: "C:\Software\Apache\tomcat\temp"
-Using JRE_HOME:        "C:\Software\java\openjdk"
-Using CLASSPATH:       "C:\Software\Apache\tomcat\bin\bootstrap.jar;C:\Software\Apache\tomcat\bin\tomcat-juli.jar"
-Using CATALINA_OPTS:   ""
-```
-注：也可以使用 `catalina.sh start` 启动，`catalina.sh stop` 停止
-
-## 3. 目录浏览
-如果想 enable directory browsing，可以修改 conf/web.xml 文件，把 listings 的 value 改为 true
-```code
-   <servlet>
-        <servlet-name>default</servlet-name>
-        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
-        <init-param>
-            <param-name>debug</param-name>
-            <param-value>0</param-value>
-        </init-param>
-        <init-param>
-            <param-name>listings</param-name>
-            <param-value>false</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-```
+## 3. 远程仓库
+- Maven 中央仓库：https://repo1.maven.org/maven2/
+- Java.net 仓库：https://maven.java.net/content/groups/public/
+- JBoss 仓库：https://repository.jboss.org/maven2/
 
 ## 4. 自动加载 Web App
 默认已经自动加载 Web App。
