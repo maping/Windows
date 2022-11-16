@@ -28,6 +28,12 @@ nexus-features=\
 
 nexus.hazelcast.discovery.isEnabled=true
 ```
+访问 http://localhost:80801 管理员账户是 admin，管理员的初始密码在 sonatype-work\nexus3\admin.password 中，首次登录后，需要修改管理员密码。
+- 管理员账户口令：admin/admin123
+- 是否允许匿名访问：允许
+- 是否允许识别 CVE-2021-44228 (also known as "log4shell") 漏洞：允许
+
+
 配置管理员权限，修改 conf/tomcat-users.xml 文件，增加以下内容：
 ```code
 <role rolename="manager-gui"/>
