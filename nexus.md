@@ -95,7 +95,15 @@ nexus.hazelcast.discovery.isEnabled=true
       </pluginRepositories>
     </profile>
 ```
-### 5.2 增加 profile 配置
+### 5.3 增加 activeProfiles 配置
+```code
+  <activeProfiles>
+    <activeProfile>nexus</activeProfile>
+  </activeProfiles>
+```
+
+## 6. 重新构建 java-maven-quickstart-app 项目
+会发现所有依赖构件都是先从 Nexus 私服下载，并保存到 Maven 本地仓库：~/.m2/repository。如果 Nexus 私服上没有依赖构件，会先从 Maven 远程中央仓库下载，然后保存到 Nexus 私服上，位于 sonatype-work 目录下。
 
 ## 参考
 - [nexus 3.2 and sonatype installation, admin login and port change](https://www.youtube.com/watch?v=A8nAPgoI2hY)
