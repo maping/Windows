@@ -48,7 +48,19 @@ nexus.hazelcast.discovery.isEnabled=true
 - 创建 Proxy 类型仓库
   - 创建 maven-jboss-release 仓库
   - 创建 maven-javanet-release 仓库
- 
+
+## 5. 为本机配置 settings.xml
+把 M2_HOME/conf/settings.xml 附件复制到 ~/.m2/ 目录下，然后把 Nexus 配置为“私服+镜像”。
+
+增加 mirror 配置
+```code
+  <mirror>
+      <id>nexus</id>
+      <mirrorOf>external:http:*</mirrorOf>
+      <url>http://localhost:8081/repository/maven-public/</url>
+  </mirror>
+```
+
 ## 参考
 - [nexus 3.2 and sonatype installation, admin login and port change](https://www.youtube.com/watch?v=A8nAPgoI2hY)
 - [Complete Sonatype Nexus Tutorial Beginner to Advanced Part#1 of 5](https://www.youtube.com/watch?v=_tn1dDmxiBw)
