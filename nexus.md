@@ -61,7 +61,9 @@ nexus.hazelcast.discovery.isEnabled=true
   </mirror>
 ```
 >说明：external:http:* 表示只有外部的基于 HTTTP 协议的 Maven 仓库才会被镜像。
+
 >重要：mirror 中的 id 值 nexus 必须要和下面定义的 repository 中的 id 值保持一致。
+
 ### 5.2 增加 profile 配置
 ```code
     <profile>
