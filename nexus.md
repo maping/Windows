@@ -52,7 +52,7 @@ nexus.hazelcast.discovery.isEnabled=true
 ## 5. 为本机配置 settings.xml
 把 M2_HOME/conf/settings.xml 附件复制到 ~/.m2/ 目录下，然后把 Nexus 配置为“私服+镜像”。
 
-增加 mirror 配置
+### 5.1 增加 mirror 配置
 ```code
   <mirror>
       <id>nexus</id>
@@ -60,6 +60,42 @@ nexus.hazelcast.discovery.isEnabled=true
       <url>http://localhost:8081/repository/maven-public/</url>
   </mirror>
 ```
+>说明：external:http:* 表示只有外部的基于 HTTTP 协议的 Maven 仓库才会被镜像。
+### 5.2 增加 profile 配置
+```code
+    <profile>
+      <id>nexus</id>
+      <repositories>
+        <repository>
+          <id>nexus</id>
+          <name>nexus</name>
+          <layout>default</layout>
+          <url>http://localhost:8081/repository/maven-public/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>nexus</id>
+          <name>nexus</name>
+          <layout>default</layout>
+          <url>http://localhost:8081/repository/maven-public/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+```
+### 5.2 增加 profile 配置
 
 ## 参考
 - [nexus 3.2 and sonatype installation, admin login and port change](https://www.youtube.com/watch?v=A8nAPgoI2hY)
