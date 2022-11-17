@@ -31,7 +31,7 @@ nexus.hazelcast.discovery.isEnabled=true
 >【最佳实践】：如果要修改端口，不要直接修改这个文件，而是修改文件 sonatype-work\nexus3\etc\nexus.properties 中的内容
 
 访问 http://localhost:80801 管理员账户是 admin，管理员的初始密码在 sonatype-work\nexus3\admin.password 中，首次登录后，需要修改管理员密码。
-- 管理员账户口令：admin/admin123
+- 管理员账户口令：admin/nexus123
 - 是否允许匿名访问：允许
 - 是否允许识别 CVE-2021-44228 (also known as "log4shell") 漏洞：允许
 
@@ -42,12 +42,12 @@ nexus.hazelcast.discovery.isEnabled=true
 
 ## 4. 创建项目仓库
 - 创建 Hosted 类型仓库
-  - 创建 account-release 仓库
-  - 创建 account-snapshot 仓库
-  - 创建 3rd-party 仓库
+  - 创建 maven-account-release 仓库
+  - 创建 maven-account-snapshot 仓库
+  - 创建 maven-3rd-party 仓库
 - 创建 Proxy 类型仓库
-  - 创建 jboss-release 仓库
-  - 创建 javanet-release 仓库
+  - 创建 maven-jboss-release 仓库
+  - 创建 maven-javanet-release 仓库
  
 ## 参考
 - [nexus 3.2 and sonatype installation, admin login and port change](https://www.youtube.com/watch?v=A8nAPgoI2hY)
