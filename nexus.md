@@ -44,7 +44,11 @@ nexus.hazelcast.discovery.isEnabled=true
 - 创建 Hosted 类型仓库
   - 创建 account-release 仓库
   - 创建 account-snapshot 仓库
-
+  - 创建 3rd-party 仓库
+- 创建 Proxy 类型仓库
+  - 创建 jboss-release 仓库
+  - 创建 javanet-release 仓库
+ 
 ## 参考
 - [nexus 3.2 and sonatype installation, admin login and port change](https://www.youtube.com/watch?v=A8nAPgoI2hY)
 - [Complete Sonatype Nexus Tutorial Beginner to Advanced Part#1 of 5](https://www.youtube.com/watch?v=_tn1dDmxiBw)
