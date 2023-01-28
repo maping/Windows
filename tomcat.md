@@ -6,13 +6,13 @@
 
 ## 2. 启动 Tomcat
 Tomcat 默认启动端口是 8080，配置在 conf/server.xml 中
-```code
+```xml
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
 ```
 配置管理员权限，修改 conf/tomcat-users.xml 文件，增加以下内容：
-```code
+```xml
 <role rolename="manager-gui"/>
 <role rolename="manager-status"/>
 <role rolename="manager-script"/>
@@ -33,7 +33,7 @@ Using CATALINA_OPTS:   ""
 
 ## 3. 目录浏览
 如果想 enable directory browsing，可以修改 conf/web.xml 文件，把 listings 的 value 改为 true
-```code
+```xml
    <servlet>
         <servlet-name>default</servlet-name>
         <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
