@@ -5,7 +5,7 @@
 2. 右键 Run as administrator，可以添加修改 System Variables
 
 ## 2. 安装 Git ✅
-- 下载 [Git](https://git-scm.com/download/win) 
+- 下载 [Git](https://git-scm.com/download/win)
 -	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
 ``` console
 $ git --version
@@ -82,6 +82,9 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ### 5.1 安装和配置 Python ✅
 - 下载 [Python](https://www.python.org)
 - 双击安装：python-3.11.4-amd64.exe
+- 设置环境变量 PATH
+  - C:\Users\vmaping\AppData\Local\Programs\Python\Python311\Scripts\
+  - C:\Users\vmaping\AppData\Local\Programs\Python\Python311\
 - 检查安装是否正确：打开一个 cmd 窗口，输入 `python`
 ``` console
 $ python
