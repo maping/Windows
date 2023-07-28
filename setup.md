@@ -81,11 +81,11 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 ### 5.1 安装和配置 Python ✅
 - 下载 [Python](https://www.python.org)
-- 双击安装：python-3.10.5-amd64.exe
+- 双击安装：python-3.11.4-amd64.exe
 - 检查安装是否正确：打开一个 cmd 窗口，输入 `python`
 ``` console
 $ python
-Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
