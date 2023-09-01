@@ -22,6 +22,43 @@ $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s 
 100 43.5M  100 43.5M    0     0  7237k      0  0:00:06  0:00:06 --:--:-- 9018k
 ```
 
+### 3.2 安装 gpg
+```console
+$ gpg --gen-key
+gpg (GnuPG) 2.2.19; Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Note: Use "gpg --full-generate-key" for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Ma Ping
+Email address: maping930883@hotmail.com
+You selected this USER-ID:
+    "Ma Ping <maping930883@hotmail.com>"
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? o
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: /home/maping/.gnupg/trustdb.gpg: trustdb created
+gpg: key 621951D36E86937A marked as ultimately trusted
+gpg: directory '/home/maping/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/home/maping/.gnupg/openpgp-revocs.d/1714CDEB64509317CD142F76621951D36E86937A.rev'
+public and secret key created and signed.
+
+pub   rsa3072 2023-09-01 [SC] [expires: 2025-08-31]
+      1714CDEB64509317CD142F76621951D36E86937A
+uid                      Ma Ping <maping930883@hotmail.com>
+sub   rsa3072 2023-09-01 [E] [expires: 2025-08-31]
+```
+
 ## 4. 疑问
 - Ubuntu Terminal 原理，内嵌了一个 Ubuntu 在 Windows 中，那里面做的操作怎么保留 ？
 - 卸载 Ubuntu Terminal，所有东西都没了？
