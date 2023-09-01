@@ -57,7 +57,19 @@ pub   rsa3072 2023-09-01 [SC] [expires: 2025-08-31]
       1714CDEB64509317CD142F76621951D36E86937A
 uid                      Ma Ping <maping930883@hotmail.com>
 sub   rsa3072 2023-09-01 [E] [expires: 2025-08-31]
+$ gpg --detach-sign sms-pricing-20230901.pdf
+
+$ gpg --verify sms-pricing-20230901.pdf.sig
+gpg: assuming signed data in 'sms-pricing-20230901.pdf'
+gpg: Signature made Fri Sep  1 10:48:36 2023 CST
+gpg:                using RSA key 1714CDEB64509317CD142F76621951D36E86937A
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: next trustdb check due at 2025-08-31
+gpg: Good signature from "Ma Ping <maping930883@hotmail.com>" [ultimate]
 ```
+
 
 ## 4. 疑问
 - Ubuntu Terminal 原理，内嵌了一个 Ubuntu 在 Windows 中，那里面做的操作怎么保留 ？
