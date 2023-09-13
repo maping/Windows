@@ -376,7 +376,7 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 - 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
 ``` console
 $ aws --version
-aws-cli/2.8.2 Python/3.9.11 Windows/10 exe/AMD64 prompt/off
+aws-cli/2.13.17 Python/3.11.5 Windows/10 exe/AMD64 prompt/off
 $ where aws
 C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
