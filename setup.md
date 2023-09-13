@@ -199,14 +199,34 @@ lrwxrwxrwx 1 root root 48 Jun  6 22:13 /usr/bin/docker -> /mnt/wsl/docker-deskto
 - 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
     - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
-    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.24.1/bin/windows/amd64/kubectl.exe
-    - VERSION-TAG 取值为版本号，比如：v1.24.1
+    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.28.1/bin/windows/amd64/kubectl.exe
+    - VERSION-TAG 取值为版本号，比如：v1.28.1
     - OS 取值可以为 darwin, linux, windows
     - ARCH 取值可以为 386, amd64
 - 设置环境变量 PATH，增加一条，C:\Software\Google\Kubernetes 
-- 检查安装是否正确：打开 cmd 命令窗口，```kubectl version -o yaml```
+- 检查安装是否正确：打开 cmd 命令窗口，```kubectl version --client -o yaml```
 ```console
-$ kubectl version -o yaml
+$ kubectl version --client -o yaml
+clientVersion:
+  buildDate: "2023-08-24T11:23:10Z"
+  compiler: gc
+  gitCommit: 8dc49c4b984b897d423aab4971090e1879eb4f23
+  gitTreeState: clean
+  gitVersion: v1.28.1
+  goVersion: go1.20.7
+  major: "1"
+  minor: "28"
+  platform: windows/amd64
+kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
+```
+
+Docker Desktop for Windows 本身自带 kubectl
+```console
+$ where kubectl
+C:\Software\Google\Kubernetes\kubectl.exe
+C:\Program Files\Docker\Docker\resources\bin\kubectl.exe
+$ cd C:\Program Files\Docker\Docker\resources\bin
+$ kubectl version --client -o yaml
 clientVersion:
   buildDate: "2022-05-24T12:26:19Z"
   compiler: gc
@@ -218,30 +238,6 @@ clientVersion:
   minor: "24"
   platform: windows/amd64
 kustomizeVersion: v4.5.4
-
-Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
-```
-
-Docker Desktop for Windows 本身自带 kubectl
-```console
-$ where kubectl
-C:\Software\Google\Kubernetes\kubectl.exe
-C:\Program Files\Docker\Docker\resources\bin\kubectl.exe
-$ cd C:\Program Files\Docker\Docker\resources\bin
-$ kubectl version -o yaml
-clientVersion:
-  buildDate: "2022-05-03T13:46:05Z"
-  compiler: gc
-  gitCommit: 4ce5a8954017644c5420bae81d72b09b735c21f0
-  gitTreeState: clean
-  gitVersion: v1.24.0
-  goVersion: go1.18.1
-  major: "1"
-  minor: "24"
-  platform: windows/amd64
-kustomizeVersion: v4.5.4
-
-Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.
 ```
 >注意：请把手工安装的 kubectl 的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
  
