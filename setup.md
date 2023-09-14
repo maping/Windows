@@ -228,16 +228,16 @@ C:\Program Files\Docker\Docker\resources\bin\kubectl.exe
 $ cd C:\Program Files\Docker\Docker\resources\bin
 $ kubectl version --client -o yaml
 clientVersion:
-  buildDate: "2022-05-24T12:26:19Z"
+  buildDate: "2023-05-17T14:20:07Z"
   compiler: gc
-  gitCommit: 3ddd0f45aa91e2f30c70734b175631bec5b5825a
+  gitCommit: 7f6f68fdabc4df88cfea2dcf9a19b2b830f1e647
   gitTreeState: clean
-  gitVersion: v1.24.1
-  goVersion: go1.18.2
+  gitVersion: v1.27.2
+  goVersion: go1.20.4
   major: "1"
-  minor: "24"
-  platform: windows/amd64
-kustomizeVersion: v4.5.4
+  minor: "27"
+  platform: linux/amd64
+kustomizeVersion: v5.0.1
 ```
 >注意：请把手工安装的 kubectl 的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
  
