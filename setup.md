@@ -1,4 +1,4 @@
-# Windows 下开发环境设置 (2022-11-14 更新)
+# Windows 下开发环境设置 (2023-09-14 更新)
 
 ## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
@@ -248,8 +248,10 @@ $ which kubectl
 /usr/local/bin/kubectl
 $ ll /usr/local/bin/kubectl
 lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
+$ cp /mnt/c/Users/vmaping/.kube/config . 把 cmd 下的.kube/config 文件复制过来
 ```
 >重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
+>重要：连上 VPN 后，无法连接 EKS 集群，必须断开才能连。
 
 ### 7.6 安装 [kind](https://kind.sigs.k8s.io/)
 
