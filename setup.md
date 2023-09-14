@@ -382,11 +382,13 @@ C:\Program Files\Amazon\AWSCLIV2\aws.exe
 
 ### 9.2 在 ubuntu terminal 中安装 AWS CLI
 ```console
-$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 在 cmd 中执行
+$ mv /mnt/c/Users/vmaping/awscliv2.zip . 
 $ unzip awscliv2.zip
-$ sudo ./aws/install
+$ sudo ./aws/install 新装
+$ sudo ./aws/install --update 升级
 $ /usr/local/bin/aws --version
-aws-cli/2.8.2 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
+aws-cli/2.13.18 Python/3.11.5 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
 ```
 >注意：不能连接 VPN，否则 DNS 无法解析。
 
