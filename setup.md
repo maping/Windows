@@ -140,7 +140,7 @@ Ubuntu-20.04    Ubuntu 20.04 LTS
 - 检查安装是否正确：打开 cmd 命令窗口，`docker --version`
 ``` console
 $ docker --version
-Docker version 20.10.16, build aa7e414
+Docker version 24.0.6, build ed223bc
 $ where docker
 C:\Program Files\Docker\Docker\resources\bin\docker
 C:\Program Files\Docker\Docker\resources\bin\docker.exe
@@ -182,17 +182,17 @@ $ kubectl get nodes
 NAME             STATUS   ROLES           AGE     VERSION
 docker-desktop   Ready    control-plane   2m57s   v1.24.0
 ```
->说明： Enable Kubernetes 后，会发现有一个单节点的 Kubernetes Cluster。
+>说明：Enable Kubernetes 后，会发现有一个单节点的 Kubernetes Cluster，感觉没啥用，还是不要 Enable 了。
 
 ### 7.3 在 ubuntu terminal 中确认 docker 也已经安装 ✅
 ``` console
 $ docker --version
-Docker version 20.10.16, build aa7e414
+Docker version 24.0.6, build ed223bc
 $ which docker
 $ ll /usr/bin/docker
 lrwxrwxrwx 1 root root 48 Jun  6 22:13 /usr/bin/docker -> /mnt/wsl/docker-desktop/cli-tools/usr/bin/docker*
 ```
->注意：发现跟 cmd terminal 中的 Docker 版本一致，那以后更新 Docker Desktop for Windows，是不是 ubuntu terminal 中的 Docker 也会随之更新？
+>注意：发现跟 cmd terminal 中的 Docker 版本一致，以后更新 Docker Desktop for Windows，ubuntu terminal 中的 Docker 也会随之更新。
 
 ### 7.4 安装 kubectl ✅
 - [Install kubectl binary with curl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
