@@ -253,77 +253,7 @@ $ cp /mnt/c/Users/vmaping/.kube/config . 把 cmd 下的.kube/config 文件复制
 >重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
 >重要：连上 VPN 后，无法连接 EKS 集群，必须断开才能连。
 
-### 7.6 安装 [kind](https://kind.sigs.k8s.io/)
-
-直接下载 [kind-windows-amd64](https://github.com/kubernetes-sigs/kind)，改名为 kind.exe，放到 PATH 路径下。
-
-打开 PowerShell terminal，创建 Kubernetes Cluster: dev
-```console
-$ kind create cluster --name dev
-Creating cluster "dev" ...
- • Ensuring node image (kindest/node:v1.24.0) 🖼  ...
- ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
- • Preparing nodes 📦   ...
- ✓ Preparing nodes 📦
- • Writing configuration 📜  ...
- ✓ Writing configuration 📜
- • Starting control-plane 🕹️  ...
- ✓ Starting control-plane 🕹️
- • Installing CNI 🔌  ...
- ✓ Installing CNI 🔌
- • Installing StorageClass 💾  ...
- ✓ Installing StorageClass 💾
-Set kubectl context to "kind-dev"
-You can now use your cluster with:
-
-kubectl cluster-info --context kind-dev
-
-Have a nice day! 👋
-```
-打开 PowerShell terminal，创建 Kubernetes Cluster: test
-```console
-$ kind create cluster --name test
-Creating cluster "test" ...
- • Ensuring node image (kindest/node:v1.24.0) 🖼  ...
- ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
- • Preparing nodes 📦   ...
- ✓ Preparing nodes 📦
- • Writing configuration 📜  ...
- ✓ Writing configuration 📜
- • Starting control-plane 🕹️  ...
- ✓ Starting control-plane 🕹️
- • Installing CNI 🔌  ...
- ✓ Installing CNI 🔌
- • Installing StorageClass 💾  ...
- ✓ Installing StorageClass 💾
-Set kubectl context to "kind-test"
-You can now use your cluster with:
-
-kubectl cluster-info --context kind-test
-
-Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/#community 🙂
-```
-
-打开 PowerShell terminal
-```console
-$ kubectl config get-contexts
-CURRENT   NAME             CLUSTER          AUTHINFO         NAMESPACE
-          docker-desktop   docker-desktop   docker-desktop
-          kind-dev         kind-dev         kind-dev
-*         kind-test        kind-test        kind-test
-$ docker ps
-CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS                       NAMES
-91f1141a2c7f   kindest/node:v1.24.0   "/usr/local/bin/entr…"   33 seconds ago   Up 27 seconds   127.0.0.1:64501->6443/tcp   test-control-plane
-c4798142e03d   kindest/node:v1.24.0   "/usr/local/bin/entr…"   3 minutes ago    Up 3 minutes    127.0.0.1:64433->6443/tcp   dev-control-plane
-$ kubectl get nodes
-NAME                 STATUS   ROLES           AGE    VERSION
-test-control-plane   Ready    control-plane   161m   v1.24.0
-```
-
-[How to run Kubernetes locally with Kind](https://www.youtube.com/watch?v=m-IlbCgSzkc)
-[Setting up a Kubernetes cluster using kind](https://www.youtube.com/watch?v=kmTqXJW09tM)
-
-### 7.7 安装 [K9S](https://k9scli.io/)
+### 7.6 安装 [K9S](https://k9scli.io/)
 
 ## 8. Azure 开发环境 ✅
 
