@@ -21,6 +21,11 @@ $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s 
                                  Dload  Upload   Total   Spent    Left  Speed
 100 43.5M  100 43.5M    0     0  7237k      0  0:00:06  0:00:06 --:--:-- 9018k
 ```
+为 kubectl 设置 alias: k
+```console
+$ echo 'alias k=kubectl' >>~/.bashrc
+$ source ~/.bashrc
+```
 
 ### 3.2 安装 gpg
 ```console
