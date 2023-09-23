@@ -26,8 +26,25 @@ $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s 
 $ echo 'alias k=kubectl' >>~/.bashrc
 $ source ~/.bashrc
 ```
+### 3.2 安装 eksctl
+查看当前最新版本：https://github.com/eksctl-io/eksctl
+```console
+$ tar -zxvf eksctl_Linux_amd64.tar.gz
+$ sudo mv linux-amd64/helm /usr/local/bin
+$ eksctl version
+0.158.0
+```
+### 3.3 安装 helm
+查看当前最新版本：https://github.com/helm/helm/releases
+```console
+$ wget https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
+$ tar -zxvf helm-v3.12.3-linux-amd64.tar.gz
+$ sudo mv linux-amd64/helm /usr/local/bin
+$ helm version
+version.BuildInfo{Version:"v3.12.3", GitCommit:"3a31588ad33fe3b89af5a2a54ee1d25bfe6eaa5e", GitTreeState:"clean", GoVersion:"go1.20.7"}
+```
 
-### 3.2 安装 gpg
+### 3.4 安装 gpg
 ```console
 $ gpg --gen-key
 gpg (GnuPG) 2.2.19; Copyright (C) 2019 Free Software Foundation, Inc.
@@ -73,15 +90,6 @@ gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
 gpg: next trustdb check due at 2025-08-31
 gpg: Good signature from "Ma Ping <maping930883@hotmail.com>" [ultimate]
-```
-### 3.3 安装并使用 helm
-查看当前最新版本：https://github.com/helm/helm/releases
-```console
-$ wget https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
-$ tar -zxvf helm-v3.12.3-linux-amd64.tar.gz
-$ sudo mv linux-amd64/helm /usr/local/bin
-$ helm version
-version.BuildInfo{Version:"v3.12.3", GitCommit:"3a31588ad33fe3b89af5a2a54ee1d25bfe6eaa5e", GitTreeState:"clean", GoVersion:"go1.20.7"}
 ```
 
 ## 4. 疑问
