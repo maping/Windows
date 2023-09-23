@@ -74,7 +74,15 @@ gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
 gpg: next trustdb check due at 2025-08-31
 gpg: Good signature from "Ma Ping <maping930883@hotmail.com>" [ultimate]
 ```
-
+### 3.3 安装并使用 helm
+查看当前最新版本：https://github.com/helm/helm/releases
+```console
+maping@MININT-OJ4LF63:~$ wget https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
+maping@MININT-OJ4LF63:~$ tar -zxvf helm-v3.12.3-linux-amd64.tar.gz
+maping@MININT-OJ4LF63:~$ sudo mv linux-amd64/helm /usr/local/bin
+maping@MININT-OJ4LF63:~$ helm version
+version.BuildInfo{Version:"v3.7.1", GitCommit:"1d11fcb5d3f3bf00dbe6fe31b8412839a96b3dc4", GitTreeState:"clean", GoVersion:"go1.16.9"}
+```
 
 ## 4. 疑问
 - Ubuntu Terminal 原理，内嵌了一个 Ubuntu 在 Windows 中，那里面做的操作怎么保留 ？
