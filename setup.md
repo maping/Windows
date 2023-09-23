@@ -345,5 +345,19 @@ Status: Downloaded newer image for amazon/aws-cli:latest
 aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_64.amzn.2 prompt/off
 ```
 
-## Reference
+### 9.4 安装并配置 eksctl
+下载 [eksctl](https://eksctl.io/)
+```console
+$ eksctl version
+0.158.0
+```
 
+### 9.5 安装并配置 eks-node-viewer
+下载 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
+```console
+$ eks-node-viewer --version
+eks-node-viewer version 0.4.3
+commit: 23ccb3ad81bda06247c669a32f176b295d731290
+built at: 2023-08-07T15:16:40Z
+built by: goreleaser
+```
