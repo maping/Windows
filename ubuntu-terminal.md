@@ -77,11 +77,11 @@ gpg: Good signature from "Ma Ping <maping930883@hotmail.com>" [ultimate]
 ### 3.3 安装并使用 helm
 查看当前最新版本：https://github.com/helm/helm/releases
 ```console
-maping@MININT-OJ4LF63:~$ wget https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
-maping@MININT-OJ4LF63:~$ tar -zxvf helm-v3.12.3-linux-amd64.tar.gz
-maping@MININT-OJ4LF63:~$ sudo mv linux-amd64/helm /usr/local/bin
-maping@MININT-OJ4LF63:~$ helm version
-version.BuildInfo{Version:"v3.7.1", GitCommit:"1d11fcb5d3f3bf00dbe6fe31b8412839a96b3dc4", GitTreeState:"clean", GoVersion:"go1.16.9"}
+$ wget https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
+$ tar -zxvf helm-v3.12.3-linux-amd64.tar.gz
+$ sudo mv linux-amd64/helm /usr/local/bin
+$ helm version
+version.BuildInfo{Version:"v3.12.3", GitCommit:"3a31588ad33fe3b89af5a2a54ee1d25bfe6eaa5e", GitTreeState:"clean", GoVersion:"go1.20.7"}
 ```
 
 ## 4. 疑问
