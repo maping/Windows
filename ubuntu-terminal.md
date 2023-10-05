@@ -8,7 +8,18 @@ Win + R，然后输入 ubuntu 输入个人账户的口令，进入个人账户�
 
 ## 3. 在 Ubuntu Terminal 中安装软件
 
-### 3.1 安装 kubectl
+### 3.1 安装 docker 
+安装完 Docker Desktop for Windows 后，发现在 ubuntu terminal 中 docker 也已经安装
+```console
+$ docker --version
+Docker version 24.0.6, build ed223bc
+$ which docker
+$ ll /usr/bin/docker
+lrwxrwxrwx 1 root root 48 Jun  6 22:13 /usr/bin/docker -> /mnt/wsl/docker-desktop/cli-tools/usr/bin/docker*
+```
+>注意：发现跟 cmd terminal 中的 Docker 版本一致，以后更新 Docker Desktop for Windows，ubuntu terminal 中的 Docker 也会随之更新。
+
+### 3.2 安装 kubectl
 ```console
 $ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
 1.24.1
@@ -26,7 +37,7 @@ $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s 
 $ echo 'alias k=kubectl' >>~/.bashrc
 $ source ~/.bashrc
 ```
-### 3.2 安装 eksctl
+### 3.3 安装 eksctl
 查看当前最新版本：https://github.com/eksctl-io/eksctl
 ```console
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
@@ -34,7 +45,7 @@ $ sudo mv eksctl /usr/local/bin
 $ eksctl version
 0.160.0
 ```
-### 3.3 安装 helm
+### 3.4 安装 helm
 查看当前最新版本：https://github.com/helm/helm/releases
 ```console
 $ wget https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
@@ -43,7 +54,7 @@ $ sudo mv linux-amd64/helm /usr/local/bin
 $ helm version
 version.BuildInfo{Version:"v3.12.3", GitCommit:"3a31588ad33fe3b89af5a2a54ee1d25bfe6eaa5e", GitTreeState:"clean", GoVersion:"go1.20.7"}
 ```
-### 3.4 安装 AWS CLI
+### 3.5 安装 AWS CLI
 ```console
 $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" # 在 cmd 中执行
 $ mv /mnt/c/Users/vmaping/awscliv2.zip . 
@@ -61,7 +72,7 @@ $ sudo ./aws/install --update
 You can now run: /usr/local/bin/aws --version
 ```
 
-### 3.5 安装 gpg
+### 3.6 安装 gpg
 ```console
 $ gpg --gen-key
 gpg (GnuPG) 2.2.19; Copyright (C) 2019 Free Software Foundation, Inc.
