@@ -306,31 +306,13 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 - 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
 ``` console
 $ aws --version
-aws-cli/2.13.17 Python/3.11.5 Windows/10 exe/AMD64 prompt/off
+aws-cli/2.13.24 Python/3.11.5 Windows/10 exe/AMD64 prompt/off
 $ where aws
 C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
 >重要：建议下载 AWS CLI 2，AWS CLI 2 和 1 不兼容，新功能只增加到 AWS CLI 2 上。
 
-### 9.2 在 ubuntu terminal 中安装 AWS CLI
-```console
-$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 在 cmd 中执行
-$ mv /mnt/c/Users/vmaping/awscliv2.zip . 
-$ unzip awscliv2.zip
-$ sudo ./aws/install 新装
-$ sudo ./aws/install --update 升级
-$ /usr/local/bin/aws --version
-aws-cli/2.13.18 Python/3.11.5 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
-```
->注意：不能连接 VPN，否则 DNS 无法解析。
-
-更新 AWS CLI
-```console
-$ sudo ./aws/install --update
-You can now run: /usr/local/bin/aws --version
-```
-
-### 9.3 使用 Docker 运行 AWS CLI ✅
+### 9.2 使用 Docker 运行 AWS CLI ✅
 ``` console
 $ docker run --rm -it amazon/aws-cli --version
 Unable to find image 'amazon/aws-cli:latest' locally
@@ -344,15 +326,13 @@ Digest: sha256:c95ab2277ee36252dd31b7c50a6a3e82eb558089618bfd22308f8e0da3d753c3
 Status: Downloaded newer image for amazon/aws-cli:latest
 aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_64.amzn.2 prompt/off
 ```
-
-### 9.4 安装并配置 eksctl
+### 9.3 安装并配置 eksctl
 下载 [eksctl](https://eksctl.io/)
 ```console
 $ eksctl version
 0.160.0
 ```
-
-### 9.5 安装并配置 eks-node-viewer
+### 9.4 安装并配置 eks-node-viewer
 下载 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
 ```console
 $ eks-node-viewer --version
