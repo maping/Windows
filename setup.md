@@ -5,11 +5,12 @@
 2. 右键 Run as administrator，可以添加修改 System Variables
 
 ## 2. 安装 Git ✅
-- 下载 [Git](https://git-scm.com/download/win)
+- 下载 [Git](https://git-scm.com/download/win)，选择 64-bit Git for Windows Portable。
+- 加入 PATH 环境变量：C:\Software\PortableGit\bin
 -	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
 ``` console
 $ git --version
-git version 2.36.1.windows.1
+git version 2.42.0.windows.2
 ```
 
 ## 3. 安装和配置 FileZilla ✅
