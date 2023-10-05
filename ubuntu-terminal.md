@@ -42,7 +42,8 @@ clientVersion:
 kustomizeVersion: v5.0.1
 ```
 >重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
->重要：连上 VPN 后，无法连接 EKS 集群，必须断开才能连。
+
+>重要：连上 VPN 后，不能访问外网（原因不明），因此无法连接 EKS 集群，必须断开才能连。
 
 #### 3.2.2 单独下载并安装 kubectl
 ```console
