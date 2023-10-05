@@ -43,8 +43,25 @@ $ sudo mv linux-amd64/helm /usr/local/bin
 $ helm version
 version.BuildInfo{Version:"v3.12.3", GitCommit:"3a31588ad33fe3b89af5a2a54ee1d25bfe6eaa5e", GitTreeState:"clean", GoVersion:"go1.20.7"}
 ```
+### 3.4 安装 AWS CLI
+```console
+$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" # 在 cmd 中执行
+$ mv /mnt/c/Users/vmaping/awscliv2.zip . 
+$ unzip awscliv2.zip
+$ sudo ./aws/install 新装
+$ sudo ./aws/install --update 升级
+$ /usr/local/bin/aws --version
+aws-cli/2.13.18 Python/3.11.5 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
+```
+>注意：不能连接 VPN，否则 DNS 无法解析。
 
-### 3.4 安装 gpg
+更新 AWS CLI
+```console
+$ sudo ./aws/install --update
+You can now run: /usr/local/bin/aws --version
+```
+
+### 3.5 安装 gpg
 ```console
 $ gpg --gen-key
 gpg (GnuPG) 2.2.19; Copyright (C) 2019 Free Software Foundation, Inc.
