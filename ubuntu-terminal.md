@@ -72,6 +72,7 @@ clientVersion:
   platform: linux/amd64
 kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
+>说明：设置 PATH 环境变量后，可以看到 kubectl 使用的是单独下载的 kubectl。
 
 #### 3.2.4 复制 ~/.kube/config
 把 cmd 下的.kube/config 文件复制过来
