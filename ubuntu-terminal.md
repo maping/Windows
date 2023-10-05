@@ -32,7 +32,7 @@ $ source ~/.bashrc
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
 $ sudo mv linux-amd64/helm /usr/local/bin
 $ eksctl version
-0.158.0
+0.160.0
 ```
 ### 3.3 安装 helm
 查看当前最新版本：https://github.com/helm/helm/releases
