@@ -63,12 +63,14 @@ $ eksctl version
 ### 3.4 安装 helm
 查看当前最新版本：https://github.com/helm/helm/releases
 ```console
-$ wget https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
-$ tar -zxvf helm-v3.12.3-linux-amd64.tar.gz
+$ curl "https://get.helm.sh/helm-v3.13.0-linux-amd64.tar.gz" -o "helm-v3.13.0-linux-amd64.tar.gz" # 在 cmd 中执行
+$ mv /mnt/c/Users/vmaping/helm-v3.13.0-linux-amd64.tar.gz . 
+$ tar -zxvf helm-v3.13.0-linux-amd64.tar.gz
 $ sudo mv linux-amd64/helm /usr/local/bin
 $ helm version
-version.BuildInfo{Version:"v3.12.3", GitCommit:"3a31588ad33fe3b89af5a2a54ee1d25bfe6eaa5e", GitTreeState:"clean", GoVersion:"go1.20.7"}
+version.BuildInfo{Version:"v3.13.0", GitCommit:"825e86f6a7a38cef1112bfa606e4127a706749b1", GitTreeState:"clean", GoVersion:"go1.20.8"}
 ```
+
 ### 3.5 安装 AWS CLI
 ```console
 $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" # 在 cmd 中执行
@@ -79,7 +81,7 @@ $ sudo ./aws/install --update # 升级
 $ /usr/local/bin/aws --version
 aws-cli/2.13.24 Python/3.11.5 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
 ```
->注意：不能连接 VPN，否则 DNS 无法解析。
+>注意：下载时不能连接 VPN，否则 DNS 无法解析。
 
 更新 AWS CLI
 ```console
