@@ -28,7 +28,18 @@ $ which kubectl
 /usr/local/bin/kubectl
 $ ll /usr/local/bin/kubectl
 lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
-$ cp /mnt/c/Users/vmaping/.kube/config . 把 cmd 下的.kube/config 文件复制过来
+$ kubectl version --client -o yaml
+clientVersion:
+  buildDate: "2023-05-17T14:20:07Z"
+  compiler: gc
+  gitCommit: 7f6f68fdabc4df88cfea2dcf9a19b2b830f1e647
+  gitTreeState: clean
+  gitVersion: v1.27.2
+  goVersion: go1.20.4
+  major: "1"
+  minor: "27"
+  platform: linux/amd64
+kustomizeVersion: v5.0.1
 ```
 >重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
 >重要：连上 VPN 后，无法连接 EKS 集群，必须断开才能连。
@@ -50,6 +61,10 @@ $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s 
 ```console
 $ echo 'alias k=kubectl' >>~/.bashrc
 $ source ~/.bashrc
+```
+#### 3.2.4 复制 ~/.kube/config
+```console
+$ cp /mnt/c/Users/vmaping/.kube/config . 把 cmd 下的.kube/config 文件复制过来
 ```
 
 ### 3.3 安装 eksctl
