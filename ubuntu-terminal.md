@@ -48,10 +48,10 @@ version.BuildInfo{Version:"v3.12.3", GitCommit:"3a31588ad33fe3b89af5a2a54ee1d25b
 $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" # 在 cmd 中执行
 $ mv /mnt/c/Users/vmaping/awscliv2.zip . 
 $ unzip awscliv2.zip
-$ sudo ./aws/install 新装
-$ sudo ./aws/install --update 升级
+$ sudo ./aws/install # 新装
+$ sudo ./aws/install --update # 升级
 $ /usr/local/bin/aws --version
-aws-cli/2.13.18 Python/3.11.5 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
+aws-cli/2.13.24 Python/3.11.5 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
 ```
 >注意：不能连接 VPN，否则 DNS 无法解析。
 
