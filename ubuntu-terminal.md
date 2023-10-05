@@ -30,7 +30,7 @@ $ source ~/.bashrc
 查看当前最新版本：https://github.com/eksctl-io/eksctl
 ```console
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
-$ sudo mv linux-amd64/helm /usr/local/bin
+$ sudo mv eksctl /usr/local/bin
 $ eksctl version
 0.160.0
 ```
