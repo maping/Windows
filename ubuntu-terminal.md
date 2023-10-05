@@ -20,6 +20,20 @@ lrwxrwxrwx 1 root root 48 Jun  6 22:13 /usr/bin/docker -> /mnt/wsl/docker-deskto
 >注意：发现跟 cmd terminal 中的 Docker 版本一致，以后更新 Docker Desktop for Windows，ubuntu terminal 中的 Docker 也会随之更新。
 
 ### 3.2 安装 kubectl
+
+#### 3.2.1 Docker 自带的 kubectl
+安装完 Docker Desktop for Windows 后，发现也会在 ubuntu terminal 中安装一个 kubectl
+```console
+$ which kubectl
+/usr/local/bin/kubectl
+$ ll /usr/local/bin/kubectl
+lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
+$ cp /mnt/c/Users/vmaping/.kube/config . 把 cmd 下的.kube/config 文件复制过来
+```
+>重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
+>重要：连上 VPN 后，无法连接 EKS 集群，必须断开才能连。
+
+#### 3.2.2 单独下载并安装 kubectl
 ```console
 $ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
 1.24.1
@@ -32,11 +46,12 @@ $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s 
                                  Dload  Upload   Total   Spent    Left  Speed
 100 43.5M  100 43.5M    0     0  7237k      0  0:00:06  0:00:06 --:--:-- 9018k
 ```
-为 kubectl 设置 alias: k
+#### 3.2.3 为 kubectl 设置 alias: k
 ```console
 $ echo 'alias k=kubectl' >>~/.bashrc
 $ source ~/.bashrc
 ```
+
 ### 3.3 安装 eksctl
 查看当前最新版本：https://github.com/eksctl-io/eksctl
 ```console
