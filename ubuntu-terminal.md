@@ -48,24 +48,36 @@ kustomizeVersion: v5.0.1
 #### 3.2.2 单独下载并安装 kubectl
 ```console
 $ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
-1.24.1
-$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.24.1/bin/linux/amd64/kubectl"
- % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 43.5M  100 43.5M    0     0  11.6M      0  0:00:03  0:00:03 --:--:-- 11.6M
+v1.28.2
+$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.28.2/bin/linux/amd64/kubectl" # 在 cmd termial 中执行
 $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
- % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 43.5M  100 43.5M    0     0  7237k      0  0:00:06  0:00:06 --:--:-- 9018k
+$ mkdir software && cd software
+$ cp /mnt/c/Users/vmaping/kubectl .
 ```
-#### 3.2.3 为 kubectl 设置 alias: k
+#### 3.2.3 修改 ~/.bashrc
 ```console
+$ echo 'export PATH=/home/maping/software:$PATH' >>~/.bashrc
 $ echo 'alias k=kubectl' >>~/.bashrc
 $ source ~/.bashrc
+$ kubectl version --client -o yaml
+clientVersion:
+  buildDate: "2023-09-13T09:35:49Z"
+  compiler: gc
+  gitCommit: 89a4ea3e1e4ddd7f7572286090359983e0387b2f
+  gitTreeState: clean
+  gitVersion: v1.28.2
+  goVersion: go1.20.8
+  major: "1"
+  minor: "28"
+  platform: linux/amd64
+kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
+
 #### 3.2.4 复制 ~/.kube/config
+把 cmd 下的.kube/config 文件复制过来
 ```console
-$ cp /mnt/c/Users/vmaping/.kube/config . 把 cmd 下的.kube/config 文件复制过来
+$ cd ~/.kube/
+$ cp /mnt/c/Users/vmaping/.kube/config . 
 ```
 
 ### 3.3 安装 eksctl
