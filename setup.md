@@ -175,15 +175,17 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
- ``` 
+``` 
 
-打开 Docker Desktop，勾选 Kubernetes -> Enable Kubernetes，Apply & Restart
+Docker Desktop 自带 Kubernetes，勾选 Kubernetes -> Enable Kubernetes，Apply & Restart
 ```console
 $ kubectl get nodes
 NAME             STATUS   ROLES           AGE     VERSION
 docker-desktop   Ready    control-plane   2m57s   v1.24.0
 ```
->说明：Enable Kubernetes 后，会发现有一个单节点的 Kubernetes Cluster，感觉没啥用，还是不要 Enable 了。
+>说明：Enable Kubernetes 后，会发现有一个单节点的 Kubernetes Cluster。
+
+>重要：感觉没有 Kind 好用，还是不要 Enable 了。
 
 ### 7.3 在 ubuntu terminal 中确认 docker 也已经安装 ✅
 ``` console
