@@ -187,46 +187,12 @@ docker-desktop   Ready    control-plane   2m57s   v1.24.0
 
 >重要：感觉没有 Kind 好用，还是不要 Enable 了。
 
-### 7.3 在 ubuntu terminal 中确认 docker 也已经安装 ✅
-``` console
-$ docker --version
-Docker version 24.0.6, build ed223bc
-$ which docker
-$ ll /usr/bin/docker
-lrwxrwxrwx 1 root root 48 Jun  6 22:13 /usr/bin/docker -> /mnt/wsl/docker-desktop/cli-tools/usr/bin/docker*
-```
->注意：发现跟 cmd terminal 中的 Docker 版本一致，以后更新 Docker Desktop for Windows，ubuntu terminal 中的 Docker 也会随之更新。
+### 7.3 安装 kubectl ✅
 
-### 7.4 安装 kubectl ✅
-- [Install kubectl binary with curl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
-- 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
-- 科学下载 kubectl
-    - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
-    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.28.1/bin/windows/amd64/kubectl.exe
-    - VERSION-TAG 取值为版本号，比如：v1.28.1
-    - OS 取值可以为 darwin, linux, windows
-    - ARCH 取值可以为 386, amd64
-- 设置环境变量 PATH，增加一条，C:\Software\Google\Kubernetes 
-- 检查安装是否正确：打开 cmd 命令窗口，```kubectl version --client -o yaml```
-```console
-$ kubectl version --client -o yaml
-clientVersion:
-  buildDate: "2023-08-24T11:23:10Z"
-  compiler: gc
-  gitCommit: 8dc49c4b984b897d423aab4971090e1879eb4f23
-  gitTreeState: clean
-  gitVersion: v1.28.1
-  goVersion: go1.20.7
-  major: "1"
-  minor: "28"
-  platform: windows/amd64
-kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
-```
-
+#### 7.3.1 Docker 自带的 kubectl
 Docker Desktop for Windows 本身自带 kubectl
 ```console
 $ where kubectl
-C:\Software\Google\Kubernetes\kubectl.exe
 C:\Program Files\Docker\Docker\resources\bin\kubectl.exe
 $ cd C:\Program Files\Docker\Docker\resources\bin
 $ kubectl version --client -o yaml
@@ -242,19 +208,32 @@ clientVersion:
   platform: linux/amd64
 kustomizeVersion: v5.0.1
 ```
->注意：请把手工安装的 kubectl 的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前，或者干脆删除 Docker Desktop 所安装的 kubectl。
- 
-### 7.5 在 ubuntu terminal 中确认 kubectl 也已经安装 ✅
-Docker Desktop for Windows 也会在 ubuntu terminal 中安装一个 kubectl
+#### 7.3.2 单独下载并安装 kubectl
+- [Install kubectl binary with curl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
+- 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
+- 科学下载 kubectl
+    - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
+    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.28.2/bin/windows/amd64/kubectl.exe
+    - VERSION-TAG 取值为版本号，比如：v1.28.2
+    - OS 取值可以为 darwin, linux, windows
+    - ARCH 取值可以为 386, amd64
+- 设置环境变量 PATH，增加一条，C:\Software\Google\Kubernetes
+- 检查安装是否正确：打开 cmd 命令窗口，`kubectl version --client -o yaml`
+>重要：请把手工安装的 kubectl 的 PATH 项放到 Docker Desktop 安装程序所添加的目录之前。
 ```console
-$ which kubectl
-/usr/local/bin/kubectl
-$ ll /usr/local/bin/kubectl
-lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
-$ cp /mnt/c/Users/vmaping/.kube/config . 把 cmd 下的.kube/config 文件复制过来
+$ kubectl version --client -o yaml
+clientVersion:
+  buildDate: "2023-09-13T09:35:49Z"
+  compiler: gc
+  gitCommit: 89a4ea3e1e4ddd7f7572286090359983e0387b2f
+  gitTreeState: clean
+  gitVersion: v1.28.2
+  goVersion: go1.20.8
+  major: "1"
+  minor: "28"
+  platform: windows/amd64
+kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
->重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
->重要：连上 VPN 后，无法连接 EKS 集群，必须断开才能连。
 
 ### 7.6 安装 [K9S](https://k9scli.io/)
 
