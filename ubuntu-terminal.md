@@ -107,8 +107,8 @@ $ mv /mnt/c/Users/vmaping/awscliv2.zip .
 $ unzip awscliv2.zip
 $ sudo ./aws/install # 新装
 $ sudo ./aws/install --update # 升级
-$ /usr/local/bin/aws --version
-aws-cli/2.13.24 Python/3.11.5 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
+$ aws --version
+aws-cli/2.13.26 Python/3.11.6 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
 ```
 >注意：下载时不能连接 VPN，否则 DNS 无法解析。
 
