@@ -87,7 +87,7 @@ $ cp /mnt/c/Users/vmaping/.kube/config .
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
 $ sudo mv eksctl /usr/local/bin
 $ eksctl version
-0.160.0
+0.162.0
 ```
 ### 3.4 安装 helm
 查看当前最新版本：https://github.com/helm/helm/releases
