@@ -1,4 +1,4 @@
-# Windows 下开发环境设置 (2023-09-14 更新)
+# Windows 下开发环境设置 (2023-10-14 更新)
 
 ## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
@@ -312,7 +312,7 @@ aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_
 下载 [eksctl](https://eksctl.io/)
 ```console
 $ eksctl version
-0.160.0
+0.162.0
 ```
 ### 9.4 安装并配置 eks-node-viewer
 下载 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
