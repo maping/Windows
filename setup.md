@@ -1,4 +1,4 @@
-# Windows 下开发环境设置 (2023-10-14 更新)
+# Windows 下开发环境设置 (2023-10-25 更新)
 
 ## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
@@ -94,7 +94,23 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-## 6. Go 开发环境
+### 5.2 为 VSCode 配置 Python 开发运行环境
+[【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
+
+## 6. Node.JS 开发环境
+
+### 6.1 安装和配置 Python ✅
+- 下载 [Node.JS](https://nodejs.org)，选择 LTS
+- 双击安装：node-v20.9.0-x64.msi
+- 设置环境变量 PATH
+- 检查安装是否正确：打开一个 cmd 窗口
+``` console
+$ npm -v
+10.1.0
+$ node -v
+v20.9.0
+```
+### 6.2 为 VSCode 配置 Node.JS 开发运行环境
 
 ## 7. 容器开发环境 ✅
 
