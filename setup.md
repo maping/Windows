@@ -107,6 +107,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 ``` console
 $ npm -v
 10.1.0
+$ npm install -g npm@10.2.1
+$ npm -v
+10.2.1
 $ node -v
 v20.9.0
 ```
