@@ -112,6 +112,9 @@ $ npm -v
 10.2.1
 $ node -v
 v20.9.0
+$ npm install -g yarn
+$ yarn -v
+1.22.19
 ```
 ### 6.2 为 VSCode 配置 Node.JS 开发运行环境
 
