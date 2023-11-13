@@ -350,8 +350,7 @@ Digest: sha256:c95ab2277ee36252dd31b7c50a6a3e82eb558089618bfd22308f8e0da3d753c3
 Status: Downloaded newer image for amazon/aws-cli:latest
 aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_64.amzn.2 prompt/off
 ```
-### 9.3 安装并配置 eksctl
-下载 [eksctl](https://eksctl.io/)
+### 9.3 安装并配置  [eksctl](https://eksctl.io/)
 ```console
 $ eksctl version
 0.164.0
