@@ -356,12 +356,11 @@ aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_
 $ eksctl version
 0.164.0
 ```
-### 9.4 安装并配置 eks-node-viewer
-下载 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
+### 9.4 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
 ```console
 $ eks-node-viewer --version
-eks-node-viewer version 0.4.3
-commit: 23ccb3ad81bda06247c669a32f176b295d731290
-built at: 2023-08-07T15:16:40Z
+eks-node-viewer version 0.5.0
+commit: 952534dd822c3005efd1e625022067fd2f05b5b5
+built at: 2023-10-20T18:18:31Z
 built by: goreleaser
 ```
