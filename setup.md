@@ -235,8 +235,8 @@ kustomizeVersion: v5.0.1
 - 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
     - https://storage.googleapis.com/kubernetes-release/release/VERSION-TAG/bin/OS/ARCH/kubectl.exe 
-    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.28.2/bin/windows/amd64/kubectl.exe
-    - VERSION-TAG 取值为版本号，比如：v1.28.2
+    - 比如：curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.28.3/bin/windows/amd64/kubectl.exe
+    - VERSION-TAG 取值为版本号，比如：v1.28.3
     - OS 取值可以为 darwin, linux, windows
     - ARCH 取值可以为 386, amd64
 - 设置环境变量 PATH，增加一条，C:\Software\Google\Kubernetes
@@ -245,12 +245,12 @@ kustomizeVersion: v5.0.1
 ```console
 $ kubectl version --client -o yaml
 clientVersion:
-  buildDate: "2023-09-13T09:35:49Z"
+  buildDate: "2023-10-18T11:42:52Z"
   compiler: gc
-  gitCommit: 89a4ea3e1e4ddd7f7572286090359983e0387b2f
+  gitCommit: a8a1abc25cad87333840cd7d54be2efaf31a3177
   gitTreeState: clean
-  gitVersion: v1.28.2
-  goVersion: go1.20.8
+  gitVersion: v1.28.3
+  goVersion: go1.20.10
   major: "1"
   minor: "28"
   platform: windows/amd64
