@@ -347,7 +347,7 @@ aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_
 下载 [eksctl](https://eksctl.io/)
 ```console
 $ eksctl version
-0.162.0
+0.164.0
 ```
 ### 9.4 安装并配置 eks-node-viewer
 下载 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
