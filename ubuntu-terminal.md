@@ -30,16 +30,16 @@ $ ll /usr/local/bin/kubectl
 lrwxrwxrwx 1 root root 55 Jun  6 22:13 /usr/local/bin/kubectl -> /mnt/wsl/docker-desktop/cli-tools/usr/local/bin/kubectl*
 $ kubectl version --client -o yaml
 clientVersion:
-  buildDate: "2023-05-17T14:20:07Z"
+  buildDate: "2023-09-13T09:35:49Z"
   compiler: gc
-  gitCommit: 7f6f68fdabc4df88cfea2dcf9a19b2b830f1e647
+  gitCommit: 89a4ea3e1e4ddd7f7572286090359983e0387b2f
   gitTreeState: clean
-  gitVersion: v1.27.2
-  goVersion: go1.20.4
+  gitVersion: v1.28.2
+  goVersion: go1.20.8
   major: "1"
-  minor: "27"
-  platform: linux/amd64
-kustomizeVersion: v5.0.1
+  minor: "28"
+  platform: windows/amd64
+kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
 >重要：kubectl 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 之间彼此是不通的。
 
