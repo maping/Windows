@@ -48,8 +48,8 @@ kustomizeVersion: v5.0.1
 #### 3.2.2 单独下载并安装 kubectl
 ```console
 $ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
-v1.28.2
-$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.28.2/bin/linux/amd64/kubectl" # 在 cmd termial 中执行
+v1.28.3
+$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.28.3/bin/linux/amd64/kubectl" # 在 cmd termial 中执行
 $ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 $ mkdir software && cd software
 $ cp /mnt/c/Users/vmaping/kubectl .
@@ -61,12 +61,12 @@ $ echo 'alias k=kubectl' >>~/.bashrc
 $ source ~/.bashrc
 $ kubectl version --client -o yaml
 clientVersion:
-  buildDate: "2023-09-13T09:35:49Z"
+  buildDate: "2023-10-18T11:42:52Z"
   compiler: gc
-  gitCommit: 89a4ea3e1e4ddd7f7572286090359983e0387b2f
+  gitCommit: a8a1abc25cad87333840cd7d54be2efaf31a3177
   gitTreeState: clean
-  gitVersion: v1.28.2
-  goVersion: go1.20.8
+  gitVersion: v1.28.3
+  goVersion: go1.20.10
   major: "1"
   minor: "28"
   platform: linux/amd64
@@ -87,7 +87,7 @@ $ cp /mnt/c/Users/vmaping/.kube/config .
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
 $ sudo mv eksctl /usr/local/bin
 $ eksctl version
-0.162.0
+0.164.0
 ```
 ### 3.4 安装 helm
 查看当前最新版本：https://github.com/helm/helm/releases
