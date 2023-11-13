@@ -81,16 +81,15 @@ $ cd ~/.kube/
 $ cp /mnt/c/Users/vmaping/.kube/config . 
 ```
 
-### 3.3 安装 eksctl
-查看当前最新版本：https://github.com/eksctl-io/eksctl
+### 3.3 安装 [eksctl](https://github.com/eksctl-io/eksctl)
 ```console
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
 $ sudo mv eksctl /usr/local/bin
 $ eksctl version
 0.164.0
 ```
-### 3.4 安装 helm
-查看当前最新版本：https://github.com/helm/helm/releases
+
+### 3.4 安装 [helm](https://github.com/helm/helm）
 ```console
 $ curl "https://get.helm.sh/helm-v3.13.2-linux-amd64.tar.gz" -o "helm-v3.13.2-linux-amd64.tar.gz" # 在 cmd 中执行
 $ mv /mnt/c/Users/vmaping/helm-v3.13.2-linux-amd64.tar.gz . 
