@@ -99,9 +99,10 @@ $ helm version
 version.BuildInfo{Version:"v3.13.2", GitCommit:"2a2fb3b98829f1e0be6fb18af2f6599e0f4e8243", GitTreeState:"clean", GoVersion:"go1.20.10"}
 ```
 
-### 3.5 安装 [k9s](https://github.com/derailed/k9s) TODO
+### 3.5 安装 [k9s](https://github.com/derailed/k9s) 
 ```console
-$ curl -LO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Linux_amd64.tar.gz
+$ curl -LO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Linux_amd64.tar.gz # 在 cmd termial 中执行
+$ mv /mnt/c/Users/vmaping/k9s_Linux_amd64.tar.gz . 
 $ tar -zxvf k9s_Linux_amd64.tar.gz
 $ sudo mv k9s /usr/local/bin
 $ k9s version
@@ -117,21 +118,21 @@ Commit:     694159b857314de5b69f251e42a5931f32105cb8
 Date:       2023-11-12T06:19:0
 ```
 
-### 3.6 安装 [kind](https://github.com/kubernetes-sigs/kind) TODO
+### 3.6 安装 [kind](https://github.com/kubernetes-sigs/kind) 
 ```console
-$ curl -LO https://github.com/kubernetes-sigs/kind/releases/download/v0.20.0/kind-linux-amd64
+$ curl -LO https://github.com/kubernetes-sigs/kind/releases/download/v0.20.0/kind-linux-amd64  # 在 cmd termial 中执行
+$ mv /mnt/c/Users/vmaping/kind-linux-amd64 . 
 $ mv kind-linux-amd64 kind
-$ chmod +x kind
 $ sudo mv kind /usr/local/bin
 $ kind version
 kind v0.20.0 go1.20.4 linux/amd64
 ```
 
-### 3.7 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer) TODO
+### 3.7 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer) 
 ```console
-$ curl -LO https://github.com/awslabs/eks-node-viewer/releases/download/v0.5.0/eks-node-viewer_Linux_x86_64
+$ curl -LO https://github.com/awslabs/eks-node-viewer/releases/download/v0.5.0/eks-node-viewer_Linux_x86_64 # 在 cmd termial 中执行
+$ mv /mnt/c/Users/vmaping/eks-node-viewer_Linux_x86_64 . 
 $ mv eks-node-viewer_Linux_x86_64 eks-node-viewer
-$ chmod +x eks-node-viewer
 $ sudo mv eks-node-viewer /usr/local/bin
 $ eks-node-viewer --version
 eks-node-viewer version 0.5.0
