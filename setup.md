@@ -1,4 +1,4 @@
-# Windows 下开发环境设置 (2023-10-25 更新)
+# Windows 下开发环境设置 (2023-11-13 更新)
 
 ## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
@@ -270,6 +270,13 @@ $ k9s version
 Version:    v0.28.2
 Commit:     694159b857314de5b69f251e42a5931f32105cb8
 Date:       2023-11-12T06:19:03Z
+```
+
+### 7.7 安装 kind
+直接下载 [kind-windows-amd64](https://github.com/kubernetes-sigs/kind)，改名为 kind.exe，放到 PATH 路径下。
+```console
+$ kind version
+kind v0.20.0 go1.20.4 windows/amd64
 ```
 
 ## 8. Azure 开发环境 ✅
