@@ -100,7 +100,48 @@ $ helm version
 version.BuildInfo{Version:"v3.13.2", GitCommit:"2a2fb3b98829f1e0be6fb18af2f6599e0f4e8243", GitTreeState:"clean", GoVersion:"go1.20.10"}
 ```
 
-### 3.5 安装 AWS CLI
+### 3.5 安装 [k9s](https://github.com/derailed/k9s) TODO
+```console
+$ curl -LO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Linux_amd64.tar.gz
+$ tar -zxvf k9s_Linux_amd64.tar.gz
+$ sudo mv k9s /usr/local/bin
+$ k9s version
+ ____  __.________
+|    |/ _/   __   \______
+|      < \____    /  ___/
+|    |  \   /    /\___ \
+|____|__ \ /____//____  >
+        \/            \/
+
+Version:    v0.28.2
+Commit:     694159b857314de5b69f251e42a5931f32105cb8
+Date:       2023-11-12T06:19:0
+```
+
+### 3.6 安装 [kind](https://github.com/kubernetes-sigs/kind) TODO
+```console
+$ curl -LO https://github.com/kubernetes-sigs/kind/releases/download/v0.20.0/kind-linux-amd64
+$ mv kind-linux-amd64 kind
+$ chmod +x kind
+$ sudo mv kind /usr/local/bin
+$ kind version
+kind v0.20.0 go1.20.4 linux/amd64
+```
+
+### 3.7 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer) TODO
+```console
+$ curl -LO https://github.com/awslabs/eks-node-viewer/releases/download/v0.5.0/eks-node-viewer_Linux_x86_64
+$ mv eks-node-viewer_Linux_x86_64 eks-node-viewer
+$ chmod +x eks-node-viewer
+$ sudo mv eks-node-viewer /usr/local/bin
+$ eks-node-viewer --version
+eks-node-viewer version 0.5.0
+commit: 952534dd822c3005efd1e625022067fd2f05b5b5
+built at: 2023-10-20T18:18:31Z
+built by: goreleaser
+```
+
+### 3.8 安装 AWS CLI
 ```console
 $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" # 在 cmd 中执行
 $ mv /mnt/c/Users/vmaping/awscliv2.zip . 
@@ -118,7 +159,7 @@ $ sudo ./aws/install --update
 You can now run: /usr/local/bin/aws --version
 ```
 
-### 3.6 安装 gpg
+### 3.9 安装 gpg
 ```console
 $ gpg --gen-key
 gpg (GnuPG) 2.2.19; Copyright (C) 2019 Free Software Foundation, Inc.
