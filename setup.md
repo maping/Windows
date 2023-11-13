@@ -267,9 +267,9 @@ $ k9s version
 |____|__ \ /____//____  >
         \/            \/
 
-Version:    v0.27.4
-Commit:     f4543e9bd2f9e2db922d12ba23363f6f7db38f9c
-Date:       2023-05-07T16:55:34Z
+Version:    v0.28.2
+Commit:     694159b857314de5b69f251e42a5931f32105cb8
+Date:       2023-11-12T06:19:03Z
 ```
 
 ## 8. Azure 开发环境 ✅
