@@ -92,12 +92,12 @@ $ eksctl version
 ### 3.4 安装 helm
 查看当前最新版本：https://github.com/helm/helm/releases
 ```console
-$ curl "https://get.helm.sh/helm-v3.13.1-linux-amd64.tar.gz" -o "helm-v3.13.1-linux-amd64.tar.gz" # 在 cmd 中执行
-$ mv /mnt/c/Users/vmaping/helm-v3.13.1-linux-amd64.tar.gz . 
-$ tar -zxvf helm-v3.13.1-linux-amd64.tar.gz
+$ curl "https://get.helm.sh/helm-v3.13.2-linux-amd64.tar.gz" -o "helm-v3.13.2-linux-amd64.tar.gz" # 在 cmd 中执行
+$ mv /mnt/c/Users/vmaping/helm-v3.13.2-linux-amd64.tar.gz . 
+$ tar -zxvf helm-v3.13.2-linux-amd64.tar.gz
 $ sudo mv linux-amd64/helm /usr/local/bin
 $ helm version
-version.BuildInfo{Version:"v3.13.1", GitCommit:"3547a4b5bf5edb5478ce352e18858d8a552a4110", GitTreeState:"clean", GoVersion:"go1.20.8"}
+version.BuildInfo{Version:"v3.13.2", GitCommit:"2a2fb3b98829f1e0be6fb18af2f6599e0f4e8243", GitTreeState:"clean", GoVersion:"go1.20.10"}
 ```
 
 ### 3.5 安装 AWS CLI
