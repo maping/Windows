@@ -96,14 +96,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ### 8.2 为 VSCode 配置 Python 开发运行环境
 1. 安装 Microsoft 出品的 Python 插件
-2. 右键 .py 文件，选择 Run Python -> Run Python File in Python Terminal
-3. 设置默认的 terminal 为 cmd：点击 + 下拉列表，选择 Select Default Profile，选择 Command Prompt
-4. 设置字体大小：Settings -> Text Editor -> Font: Font Size
-5. 修改配置文件：Settings -> Text Editor -> Edit in settings.json
+2. 安装 Cstrap 出品的 python-snippets 插件
+3. 右键 .py 文件，选择 Run Python -> Run Python File in Python Terminal
+4. 设置默认的 terminal 为 cmd：点击 + 下拉列表，选择 Select Default Profile，选择 Command Prompt
+5. 设置字体大小：Settings -> Text Editor -> Font: Font Size
+6. 修改配置文件：Settings -> Text Editor -> Edit in settings.json
   - "editor.mouseWheelZoom": true,
   - "python.analysis.completeFunctionParens": true, 
+7. 虚拟环境
 
-7. 
 [【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
 
 ## 9. Node.JS 开发环境
