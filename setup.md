@@ -363,3 +363,5 @@ commit: 952534dd822c3005efd1e625022067fd2f05b5b5
 built at: 2023-10-20T18:18:31Z
 built by: goreleaser
 ```
+
+## 13. VSCode 安装和配置
