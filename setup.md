@@ -1,4 +1,4 @@
-# Windows 下开发环境设置 (2023-11-13 更新)
+# Windows 下开发环境设置 (2023-11-30 更新)
 
 ## 1. 一键显示环境变量窗口 ✅
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
@@ -330,7 +330,7 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 - 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
 ``` console
 $ aws --version
-aws-cli/2.13.26 Python/3.11.6 Windows/10 exe/AMD64 prompt/off
+aws-cli/2.14.4 Python/3.11.6 Windows/10 exe/AMD64 prompt/off
 $ where aws
 C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
