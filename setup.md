@@ -10,7 +10,7 @@
 -	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
 ``` console
 $ git --version
-git version 2.42.0.windows.2
+git version 2.43.0.windows.1
 ```
 
 ## 3. 安装和配置 FileZilla ✅
@@ -24,9 +24,9 @@ git version 2.42.0.windows.2
 ## 5. 安装和配置 WinSCP ✅
 - 下载 [WinSCP 5.19.6](https://winscp.net/eng/download.php) 
 
-## 3. Java 开发环境
+## 6. Java 开发环境
 
-### 3.1 安装和配置 Open JDK ✅
+### 6.1 安装和配置 Open JDK ✅
 - 下载 [Open JDK](https://openjdk.java.net/)
 - 解压缩：openjdk-17+35_windows-x64_bin.zip
 - 设置环境变量 JAVA_HOME，例如：C:\Software\java\openjdk
@@ -41,7 +41,7 @@ OpenJDK Runtime Environment (build 17+35-2724)
 OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
 ```
 
-### 3.2 安装和配置 Ant ✅
+### 6.2 安装和配置 Ant ✅
 - 下载 [Ant](https://ant.apache.org/bindownload.cgi)
 - 解压缩：apache-ant-1.10.12-bin.zip
 - 设置环境变量 ANT_HOME，例如：C:\Software\apache\ant
@@ -53,7 +53,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dlog4j2.formatMsgNoLookups=true
 Apache Ant(TM) version 1.10.12 compiled on October 13 2021
 ```
 
-### 3.3 安装和配置 Maven ✅
+### 6.3 安装和配置 Maven ✅
 - 下载 [Maven](https://maven.apache.org/download.cgi)
 - 解压缩：apache-maven-3.8.6-bin.zip
 - 设置环境变量 M2_HOME，例如：C:\Software\apache\maven
@@ -70,17 +70,17 @@ Default locale: en_US, platform encoding: GBK
 OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ```
 
-## 4. .NET 开发环境
+## 7. .NET 开发环境
 
-### 4.1 .NET Framework 开发环境 ✅
+### 7.1 .NET Framework 开发环境 ✅
 下载并安装 Vistual Studio 2019
 
-### 4.2 .NET Core | .NET 6 开发环境
+### 7.2 .NET Core | .NET 6 开发环境
 下载并安装 Vistual Studio 2022
 
-## 5. Python 开发环境
+## 8. Python 开发环境
 
-### 5.1 安装和配置 Python ✅
+### 8.1 安装和配置 Python ✅
 - 下载 [Python](https://www.python.org)
 - 双击安装：python-3.12.0-amd64.exe
 - 设置环境变量 PATH
@@ -94,12 +94,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-### 5.2 为 VSCode 配置 Python 开发运行环境
+### 8.2 为 VSCode 配置 Python 开发运行环境
 [【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
 
-## 6. Node.JS 开发环境
+## 9. Node.JS 开发环境
 
-### 6.1 安装和配置 Python ✅
+### 9.1 安装和配置 Python ✅
 - 下载 [Node.JS](https://nodejs.org)，选择 LTS
 - 双击安装：node-v20.9.0-x64.msi
 - 设置环境变量 PATH
@@ -116,11 +116,11 @@ $ npm install -g yarn
 $ yarn -v
 1.22.19
 ```
-### 6.2 为 VSCode 配置 Node.JS 开发运行环境
+### 9.2 为 VSCode 配置 Node.JS 开发运行环境
 
-## 7. 容器开发环境 ✅
+## 10. 容器开发环境 ✅
 
-### 7.1 Install Linux on Windows with WSL
+### 10.1 Install Linux on Windows with WSL
 [Install Linux on Windows with WSL](https://docs.microsoft.com/en-us/windows/wsl/install) 是安装 Docker 的前置条件。
 
 以管理员身份打开 cmd terminal
@@ -155,7 +155,7 @@ Ubuntu-18.04    Ubuntu 18.04 LTS
 Ubuntu-20.04    Ubuntu 20.04 LTS
 ```
 
-### 7.2 安装和配置 Docker Desktop ✅
+### 10.2 安装和配置 Docker Desktop ✅
 >重要：Docker for Windows 目前只支持在服务支持期内的 Windows 10 。
 
 - 下载 [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/) 
@@ -209,9 +209,9 @@ docker-desktop   Ready    control-plane   2m57s   v1.24.0
 
 >重要：感觉没有 Kind 好用，还是不要 Enable 了。
 
-### 7.3 安装 kubectl ✅
+### 10.3 安装 kubectl ✅
 
-#### 7.3.1 Docker 自带的 kubectl
+#### 10.3.1 Docker 自带的 kubectl
 Docker Desktop for Windows 本身自带 kubectl
 ```console
 $ where kubectl
@@ -230,7 +230,7 @@ clientVersion:
   platform: windows/amd64
 kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
-#### 7.3.2 单独下载并安装 kubectl
+#### 10.3.2 单独下载并安装 kubectl
 - [Install kubectl binary with curl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 - 查看 kubectl 最新稳定版: https://storage.googleapis.com/kubernetes-release/release/stable.txt 
 - 科学下载 kubectl
@@ -257,7 +257,7 @@ clientVersion:
 kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
 
-### 7.6 安装 [K9S](https://k9scli.io/)
+### 10.4 安装 [K9S](https://k9scli.io/)
 ```console
 $ k9s version
  ____  __.________
@@ -272,16 +272,16 @@ Commit:     694159b857314de5b69f251e42a5931f32105cb8
 Date:       2023-11-12T06:19:03Z
 ```
 
-### 7.7 安装 kind
+### 10.5 安装 kind
 直接下载 [kind-windows-amd64](https://github.com/kubernetes-sigs/kind)，改名为 kind.exe，放到 PATH 路径下。
 ```console
 $ kind version
 kind v0.20.0 go1.20.4 windows/amd64
 ```
 
-## 8. Azure 开发环境 ✅
+## 11. Azure 开发环境 ✅
 
-### 8.1 安装和配置 Azure CLI ✅
+### 11.1 安装和配置 Azure CLI ✅
 - 下载 [Azure CLI](https://aka.ms/InstallAzureCliWindows) 
 - 检查安装是否正确：打开 cmd 命令窗口，`az --version`
 ``` console
@@ -312,7 +312,7 @@ $ which az
 ``` 
 >说明：az 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 中是同一个 az。
 
-### 8.2 安装和配置 Azure Function CLI ✅
+### 11.2 安装和配置 Azure Function CLI ✅
 - [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools)
 - 检查安装是否正确：打开 cmd 命令窗口，`func --version`
 ``` console
@@ -323,9 +323,9 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 ```
 >说明：func 在 Windows 10 下的 cmd terminal 和 ubuntu terminal 要分别单独安装。
 
-## 9. AWS 开发环境
+## 12. AWS 开发环境
 
-### 9.1 安装和配置 AWS CLI ✅
+### 12.1 安装和配置 AWS CLI ✅
 - 下载 [AWS CLI](https://awscli.amazonaws.com/AWSCLIV2.msi)
 - 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
 ``` console
@@ -336,7 +336,7 @@ C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
 >重要：建议下载 AWS CLI 2，AWS CLI 2 和 1 不兼容，新功能只增加到 AWS CLI 2 上。
 
-### 9.2 使用 Docker 运行 AWS CLI ✅
+### 12.2 使用 Docker 运行 AWS CLI ✅
 ``` console
 $ docker run --rm -it amazon/aws-cli --version
 Unable to find image 'amazon/aws-cli:latest' locally
@@ -350,12 +350,12 @@ Digest: sha256:c95ab2277ee36252dd31b7c50a6a3e82eb558089618bfd22308f8e0da3d753c3
 Status: Downloaded newer image for amazon/aws-cli:latest
 aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_64.amzn.2 prompt/off
 ```
-### 9.3 安装并配置  [eksctl](https://eksctl.io/)
+### 12.3 安装并配置  [eksctl](https://eksctl.io/)
 ```console
 $ eksctl version
 0.164.0
 ```
-### 9.4 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
+### 12.4 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
 ```console
 $ eks-node-viewer --version
 eks-node-viewer version 0.5.0
