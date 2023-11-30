@@ -98,12 +98,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 1. 安装 Microsoft 出品的 Python 插件
 2. 右键 .py 文件，选择 Run Python -> Run Python File in Python Terminal
 3. 设置默认的 terminal 为 cmd：点击 + 下拉列表，选择 Select Default Profile，选择 Command Prompt
+4. 设置字体大小：Settings -> Text Editor -> Font: Font Size
+5. 修改配置文件：Settings -> Text Editor -> Edit in settings.json
+  - "editor.mouseWheelZoom": true,
+  - "python.analysis.completeFunctionParens": true, 
 
+7. 
 [【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
 
 ## 9. Node.JS 开发环境
 
-### 9.1 安装和配置 Python ✅
+### 9.1 安装和配置 NodeJS ✅
 - 下载 [Node.JS](https://nodejs.org)，选择 LTS
 - 双击安装：node-v20.9.0-x64.msi
 - 设置环境变量 PATH
