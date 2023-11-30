@@ -4,7 +4,7 @@
 1. 桌面创建快捷方式，Target 输入: rundll32.exe sysdm.cpl,EditEnvironmentVariables
 2. 右键 Run as administrator，可以添加修改 System Variables
 
-## 2. 安装 Git ✅
+## 2. 绿色安装 Git ✅
 - 下载 [Git](https://git-scm.com/download/win)，选择 64-bit Git for Windows Portable。
 - 加入 PATH 环境变量：C:\Software\PortableGit\bin
 -	检查安装是否正确：打开 cmd 命令窗口，输入 `git --version`
@@ -95,6 +95,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 ### 8.2 为 VSCode 配置 Python 开发运行环境
+1. 安装 Microsoft 出品的 Python 插件
+2. 右键 .py 文件，选择 Run Python -> Run Python File in Python Terminal
+
 [【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
 
 ## 9. Node.JS 开发环境
@@ -364,4 +367,5 @@ built at: 2023-10-20T18:18:31Z
 built by: goreleaser
 ```
 
-## 13. VSCode 安装和配置
+## 13. 绿色安装 VSCode 安装和配置
+[下载并安装](https://code.visualstudio.com/download)
