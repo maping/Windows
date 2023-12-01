@@ -93,6 +93,8 @@ Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
+- 安装多个版本的 Python，由于 Pytorch 目前最高只支持 Python 3.11，所以需要安装 Python 3.11
+
 
 ### 8.2 为 VSCode 配置 Python 开发运行环境
 - 常用插件安装
@@ -108,6 +110,20 @@ Type "help", "copyright", "credits" or "license" for more information.
       - "python.analysis.completeFunctionParens": true,
     - 输入 print，自动出现（），并且光标在括号中
 - 虚拟环境
+   - 全局模块
+     - 运行 pip install <模块> 时，会在 pip 所对应的 Python 的解释器下的 Lib\site-packages 目录下安装该模块
+     - 所有的 Python 程序共用这些模块
+     - 同一个模块只能安装一个版本，无法满足不同 Python 程序对同一模块不同版本的要求
+   - 每个项目通过虚拟环境自己管理自己的 Python 环境（解释器和模块）
+   - 在 monthly-report 目录下执行 `python312 -m venv .venv`
+     - 此时 VSCode 会报告无法找到 Python 解析器，因为已经修改了 Python 3.12 的默认 python.exe 为 python312.exe，所以找不到了
+     - 点击 find，指定 .venv 目录下的 .venv\Scripts\python312.exe，此时右下角的的 Python 解释器变为了当前项目目录下的 .venv
+     - 在 VSCode 中打开一个虚拟环境终端（注意，不能打开系统的 cmd terminal）
+       - (.venv) C:\Code\python-projects\monthly-report> pip install pandas
+       - (.venv) C:\Code\python-projects\monthly-report> pip install numpy
+       - (.venv) C:\Code\python-projects\monthly-report>pip install openpyxl
+     - 右键 main.py，Run Python -> Run Python File in Terminal，可以在虚拟环境下成功运行了！
+   - 
 
 参考：[【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
 
