@@ -84,6 +84,10 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 - 下载 [Python](https://www.python.org)
 - 安装 Python 3.12
   - 双击安装：python-3.12.0-amd64.exe
+    - 选择 Customize installation
+    - 勾选 Add python.exe to PATH
+    - 勾选 Install Python 3.12 for all users
+    - Customize install location: C:\Users\vmaping\AppData\Local\Programs\Python\Python312 
   - 修改 python.exe 为 python312.exe
   - 设置环境变量 PATH
     - C:\Users\vmaping\AppData\Local\Programs\Python\Python312\Scripts\
