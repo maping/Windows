@@ -95,17 +95,21 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 ### 8.2 为 VSCode 配置 Python 开发运行环境
-1. 安装 Microsoft 出品的 Python 插件
-2. 安装 Cstrap 出品的 python-snippets 插件
-3. 右键 .py 文件，选择 Run Python -> Run Python File in Python Terminal
-4. 设置默认的 terminal 为 cmd：点击 + 下拉列表，选择 Select Default Profile，选择 Command Prompt
-5. 设置字体大小：Settings -> Text Editor -> Font: Font Size
-6. 修改配置文件：Settings -> Text Editor -> Edit in settings.json
-  - "editor.mouseWheelZoom": true,
-  - "python.analysis.completeFunctionParens": true, 
-7. 虚拟环境
+- 常用插件安装
+  - 安装 Microsoft 出品的 Python 插件
+  - 安装 Cstrap 出品的 python-snippets 插件
+    - 输入 def，自动输出函数定义框架，按 Tab 键切换到每个项 
+- 修改配置
+  - 设置默认的 terminal 为 cmd
+    - 点击右下角的 + 下拉列表，选择 Select Default Profile，选择 Command Prompt
+    - 右键 .py 文件，选择 Run Python -> Run Python File in Python Terminal，确认出现的 cmd terminal
+  - 括号自动补全
+    - 修改配置文件：Settings -> Text Editor -> Edit in settings.json
+      - "python.analysis.completeFunctionParens": true,
+    - 输入 print，自动出现（），并且光标在括号中
+- 虚拟环境
 
-[【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
+参考：[【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
 
 ## 9. Node.JS 开发环境
 
@@ -375,4 +379,12 @@ built by: goreleaser
 ```
 
 ## 13. 绿色安装 VSCode 安装和配置
-[下载并安装](https://code.visualstudio.com/download)
+
+### 13.1 [下载并安装](https://code.visualstudio.com/download)
+
+### 13.2 通用配置
+- 设置字体固定大小：Settings -> Text Editor -> Font: Font Size
+- 按鼠标滚轮缩放字体大小
+  - 修改配置文件：Settings -> Text Editor -> Edit in settings.json
+    - "editor.mouseWheelZoom": true,
+
