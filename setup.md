@@ -138,23 +138,33 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
      - 在 VSCode 中打开一个虚拟环境终端（注意，不能打开系统的 cmd terminal）
        - (.venv) C:\Code\python-projects\monthly-report> pip install pandas
        - (.venv) C:\Code\python-projects\monthly-report> pip install numpy
-       - (.venv) C:\Code\python-projects\monthly-report>pip install openpyxl
+       - (.venv) C:\Code\python-projects\monthly-report> pip install openpyxl
      - 右键 main.py，Run Python -> Run Python File in Terminal，可以在虚拟环境下成功运行了！
+  - 在 sms-pricing 目录下执行 `python312 -m venv .venv`
+     - 点击 find，指定 .venv 目录下的 .venv\Scripts\python312.exe，此时右下角的的 Python 解释器变为了当前项目目录下的 .venv
+     - 在 VSCode 中打开一个虚拟环境终端（注意，不能打开系统的 cmd terminal）
+       - (.venv) C:\Code\python-projects\monthly-report> pip install requests
+       - (.venv) C:\Code\python-projects\monthly-report> pip install bs4
+       - (.venv) C:\Code\python-projects\monthly-report> pip install pandas
+       - (.venv) C:\Code\python-projects\monthly-report> pip install numpy
+       - (.venv) C:\Code\python-projects\monthly-report> pip install openpyxl
+     - 右键 main.py，Run Python -> Run Python File in Terminal，TODO 有问题，待查！
    - 在 huggingface 目录下执行 `python311 -m venv .venv`
      - 点击 find，指定 .venv 目录下的 .venv\Scripts\python311.exe，此时右下角的的 Python 解释器变为了当前项目目录下的 .venv
      - 在 VSCode 中打开一个虚拟环境终端（注意，不能打开系统的 cmd terminal）
        - (.venv) C:\Code\python-projects\monthly-report> pip install transformers
+       - (.venv) C:\Code\python-projects\monthly-report> pip install datasets
        - (.venv) C:\Code\python-projects\monthly-report> pip3 install torch torchvision torchaudio
        - (.venv) C:\Code\python-projects\monthly-report> python311.exe -m pip install --upgrade pip
      - 右键 .py，Run Python -> Run Python File in Terminal，可以在虚拟环境下成功运行了！
-
-参考：[【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
 
 ### 8.3 安装 [Pytorch](https://pytorch.org/get-started/locally/)
 由于 Pytorch 目前最高只支持 Python 3.11，所以这里只能用 Python 3.11。
 ```console
 $ pip3.11 install torch torchvision torchaudio
 ```
+
+参考：[【最新教程】5分钟搞定VScode中配置Python运行环境](https://www.bilibili.com/video/BV1TN411K7sn/)
  
 ## 9. Node.JS 开发环境
 
