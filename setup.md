@@ -80,21 +80,39 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 ## 8. Python 开发环境
 
-### 8.1 安装和配置 Python ✅
+### 8.1 安装多版本的 Python ✅
+- 安装多个版本的 Python，由于 Pytorch 目前最高只支持 Python 3.11，所以这里分别安装了 Python 最新版本和 3.11
 - 下载 [Python](https://www.python.org)
-- 双击安装：python-3.12.0-amd64.exe
-- 设置环境变量 PATH
-  - C:\Users\vmaping\AppData\Local\Programs\Python\Python312\Scripts\
-  - C:\Users\vmaping\AppData\Local\Programs\Python\Python312\
-- 检查安装是否正确：打开一个 cmd 窗口，输入 `python`
-``` console
-$ python
-Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
-- 安装多个版本的 Python，由于 Pytorch 目前最高只支持 Python 3.11，所以需要安装 Python 3.11
-
+- 安装 Python 3.12
+  - 双击安装：python-3.12.0-amd64.exe
+  - 修改 python.exe 为 python312.exe
+  - 设置环境变量 PATH
+    - C:\Users\vmaping\AppData\Local\Programs\Python\Python312\Scripts\
+    - C:\Users\vmaping\AppData\Local\Programs\Python\Python312\
+  - 检查安装是否正确：打开一个 cmd 窗口，输入 `python312`
+  ``` console
+  $ python312
+  Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>>
+  ```
+- 安装 Python 3.11
+  - 双击安装：python-3.11.6-amd64.exe
+    - 选择 Customize installation
+    - 勾选 Add python.exe to PATH
+    - 勾选 Install Python 3.11 for all users
+    - Customize install location: C:\Users\vmaping\AppData\Local\Programs\Python\Python311 
+  - 修改 python.exe 为 python311.exe
+  - 设置环境变量 PATH
+    - C:\Users\vmaping\AppData\Local\Programs\Python\Python311\Scripts\
+    - C:\Users\vmaping\AppData\Local\Programs\Python\Python311\
+  - 检查安装是否正确：打开一个 cmd 窗口，输入 `python311`
+  ``` console
+  $ python311
+  Python 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)] on win32
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>>
+  ```
 
 ### 8.2 为 VSCode 配置 Python 开发运行环境
 - 常用插件安装
