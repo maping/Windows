@@ -41,7 +41,7 @@ OpenJDK Runtime Environment (build 17+35-2724)
 OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
 ```
 
-### 6.2 安装和配置 Ant ✅
+### 6.2 安装和配置 Ant 
 - 下载 [Ant](https://ant.apache.org/bindownload.cgi)
 - 解压缩：apache-ant-1.10.12-bin.zip
 - 设置环境变量 ANT_HOME，例如：C:\Software\apache\ant
@@ -53,7 +53,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dlog4j2.formatMsgNoLookups=true
 Apache Ant(TM) version 1.10.12 compiled on October 13 2021
 ```
 
-### 6.3 安装和配置 Maven ✅
+### 6.3 安装和配置 Maven 
 - 下载 [Maven](https://maven.apache.org/download.cgi)
 - 解压缩：apache-maven-3.8.6-bin.zip
 - 设置环境变量 M2_HOME，例如：C:\Software\apache\maven
@@ -72,7 +72,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 ## 7. .NET 开发环境
 
-### 7.1 .NET Framework 开发环境 ✅
+### 7.1 .NET Framework 开发环境 
 下载并安装 Vistual Studio 2019
 
 ### 7.2 .NET Core | .NET 6 开发环境
