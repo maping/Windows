@@ -158,7 +158,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
      - 在 VSCode 中打开一个虚拟环境终端（注意，不能打开系统的 cmd terminal）
        - (.venv) C:\Code\python-projects\huggingface> pip install transformers
        - (.venv) C:\Code\python-projects\huggingface> pip install datasets
-       - (.venv) C:\Code\python-projects\huggingface> pip3 install torch torchvision torchaudio
+       - (.venv) C:\Code\python-projects\huggingface> pip install torch torchvision torchaudio
        - (.venv) C:\Code\python-projects\huggingface> python311.exe -m pip install --upgrade pip
      - 右键 .py，Run Python -> Run Python File in Terminal，可以在虚拟环境下成功运行了！
 
