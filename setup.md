@@ -147,19 +147,19 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
   - 在 sms-pricing 目录下执行 `python312 -m venv .venv`
      - 点击 find，指定 .venv 目录下的 .venv\Scripts\python312.exe，此时右下角的的 Python 解释器变为了当前项目目录下的 .venv
      - 在 VSCode 中打开一个虚拟环境终端（注意，不能打开系统的 cmd terminal）
-       - (.venv) C:\Code\python-projects\monthly-report> pip install requests
-       - (.venv) C:\Code\python-projects\monthly-report> pip install bs4
-       - (.venv) C:\Code\python-projects\monthly-report> pip install pandas
-       - (.venv) C:\Code\python-projects\monthly-report> pip install numpy
-       - (.venv) C:\Code\python-projects\monthly-report> pip install openpyxl
+       - (.venv) C:\Code\python-projects\sms-pricing> pip install requests
+       - (.venv) C:\Code\python-projects\sms-pricing> pip install bs4
+       - (.venv) C:\Code\python-projects\sms-pricing> pip install pandas
+       - (.venv) C:\Code\python-projects\sms-pricing> pip install numpy
+       - (.venv) C:\Code\python-projects\sms-pricing> pip install openpyxl
      - 右键 main.py，Run Python -> Run Python File in Terminal，TODO 有问题，待查！
    - 在 huggingface 目录下执行 `python311 -m venv .venv`
      - 点击 find，指定 .venv 目录下的 .venv\Scripts\python311.exe，此时右下角的的 Python 解释器变为了当前项目目录下的 .venv
      - 在 VSCode 中打开一个虚拟环境终端（注意，不能打开系统的 cmd terminal）
-       - (.venv) C:\Code\python-projects\monthly-report> pip install transformers
-       - (.venv) C:\Code\python-projects\monthly-report> pip install datasets
-       - (.venv) C:\Code\python-projects\monthly-report> pip3 install torch torchvision torchaudio
-       - (.venv) C:\Code\python-projects\monthly-report> python311.exe -m pip install --upgrade pip
+       - (.venv) C:\Code\python-projects\huggingface> pip install transformers
+       - (.venv) C:\Code\python-projects\huggingface> pip install datasets
+       - (.venv) C:\Code\python-projects\huggingface> pip3 install torch torchvision torchaudio
+       - (.venv) C:\Code\python-projects\huggingface> python311.exe -m pip install --upgrade pip
      - 右键 .py，Run Python -> Run Python File in Terminal，可以在虚拟环境下成功运行了！
 
 ### 8.3 安装 [Pytorch](https://pytorch.org/get-started/locally/)
