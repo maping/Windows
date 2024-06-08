@@ -83,6 +83,8 @@ $ cp /mnt/c/Users/vmaping/.kube/config .
 
 ### 3.3 安装 [eksctl](https://github.com/eksctl-io/eksctl)
 ```console
+$ curl -LO https://github.com/eksctl-io/eksctl/releases/download/v0.182.0/eksctl_Linux_amd64.tar.gz  # 在 cmd termial 中执行
+$ mv /mnt/c/Users/vmaping/eksctl_Linux_amd64.tar.gz . 
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
 $ sudo mv eksctl /usr/local/bin
 $ eksctl version
@@ -101,7 +103,7 @@ version.BuildInfo{Version:"v3.15.1", GitCommit:"e211f2aa62992bd72586b395de50979e
 
 ### 3.5 安装 [k9s](https://github.com/derailed/k9s) 
 ```console
-$ curl -LO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Linux_amd64.tar.gz # 在 cmd termial 中执行
+$ curl -LO https://github.com/derailed/k9s/releases/download/v0.32.4/k9s_Linux_amd64.tar.gz # 在 cmd termial 中执行
 $ mv /mnt/c/Users/vmaping/k9s_Linux_amd64.tar.gz . 
 $ tar -zxvf k9s_Linux_amd64.tar.gz
 $ sudo mv k9s /usr/local/bin
@@ -113,19 +115,19 @@ $ k9s version
 |____|__ \ /____//____  >
         \/            \/
 
-Version:    v0.28.2
-Commit:     694159b857314de5b69f251e42a5931f32105cb8
-Date:       2023-11-12T06:19:0
+Version:    v0.32.4
+Commit:     d3027c8f2916b23606f647f47b434b08fc34bdf8
+Date:       2024-03-20T19:16:59Z
 ```
 
 ### 3.6 安装 [kind](https://github.com/kubernetes-sigs/kind) 
 ```console
-$ curl -LO https://github.com/kubernetes-sigs/kind/releases/download/v0.20.0/kind-linux-amd64  # 在 cmd termial 中执行
+$ curl -LO https://github.com/kubernetes-sigs/kind/releases/download/v0.23.0/kind-linux-amd64  # 在 cmd termial 中执行
 $ mv /mnt/c/Users/vmaping/kind-linux-amd64 . 
 $ mv kind-linux-amd64 kind
 $ sudo mv kind /usr/local/bin
 $ kind version
-kind v0.20.0 go1.20.4 linux/amd64
+kind v0.23.0 go1.21.10 linux/amd64
 ```
 
 ### 3.7 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer) 
