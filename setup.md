@@ -403,7 +403,7 @@ C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe
 - 检查安装是否正确：打开 cmd 命令窗口，`aws --version`
 ``` console
 $ aws --version
-aws-cli/2.14.4 Python/3.11.6 Windows/10 exe/AMD64 prompt/off
+aws-cli/2.16.4 Python/3.11.8 Windows/10 exe/AMD64
 $ where aws
 C:\Program Files\Amazon\AWSCLIV2\aws.exe
 ``` 
@@ -426,14 +426,14 @@ aws-cli/2.7.9 Python/3.9.11 Linux/5.10.102.1-microsoft-standard-WSL2 docker/x86_
 ### 12.3 安装并配置  [eksctl](https://eksctl.io/)
 ```console
 $ eksctl version
-0.164.0
+0.182.0
 ```
 ### 12.4 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer)
 ```console
 $ eks-node-viewer --version
-eks-node-viewer version 0.5.0
-commit: 952534dd822c3005efd1e625022067fd2f05b5b5
-built at: 2023-10-20T18:18:31Z
+eks-node-viewer version 0.6.0
+commit: e45ef3df0d6efbf25693f7d16c103593f8a3c006
+built at: 2023-11-28T17:30:17Z
 built by: goreleaser
 ```
 
