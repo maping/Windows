@@ -132,14 +132,14 @@ kind v0.23.0 go1.21.10 linux/amd64
 
 ### 3.7 安装并配置 [eks-node-viewer](https://github.com/awslabs/eks-node-viewer) 
 ```console
-$ curl -LO https://github.com/awslabs/eks-node-viewer/releases/download/v0.5.0/eks-node-viewer_Linux_x86_64 # 在 cmd termial 中执行
+$ curl -LO https://github.com/awslabs/eks-node-viewer/releases/download/v0.6.0/eks-node-viewer_Linux_x86_64 # 在 cmd termial 中执行
 $ mv /mnt/c/Users/vmaping/eks-node-viewer_Linux_x86_64 . 
 $ mv eks-node-viewer_Linux_x86_64 eks-node-viewer
 $ sudo mv eks-node-viewer /usr/local/bin
 $ eks-node-viewer --version
-eks-node-viewer version 0.5.0
-commit: 952534dd822c3005efd1e625022067fd2f05b5b5
-built at: 2023-10-20T18:18:31Z
+eks-node-viewer version 0.6.0
+commit: e45ef3df0d6efbf25693f7d16c103593f8a3c006
+built at: 2023-11-28T17:30:17Z
 built by: goreleaser
 ```
 
@@ -150,8 +150,9 @@ $ mv /mnt/c/Users/vmaping/awscliv2.zip .
 $ unzip awscliv2.zip
 $ sudo ./aws/install # 新装
 $ sudo ./aws/install --update # 升级
+You can now run: /usr/local/bin/aws --version
 $ aws --version
-aws-cli/2.14.4 Python/3.11.6 Linux/5.10.102.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off
+aws-cli/2.16.4 Python/3.11.8 Linux/5.15.146.1-microsoft-standard-WSL2 exe/x86_64.ubuntu.20
 ```
 >注意：下载时不能连接 VPN，否则 DNS 无法解析。
 
