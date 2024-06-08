@@ -47,10 +47,10 @@ kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 
 #### 3.2.2 单独下载并安装 kubectl
 ```console
-$ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
-v1.28.3
-$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.28.3/bin/linux/amd64/kubectl" # 在 cmd termial 中执行
-$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+$ curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt # 在 cmd termial 中执行
+v1.30.1
+$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.30.1/bin/linux/amd64/kubectl" # 在 cmd termial 中执行
+$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" # 在 cmd termial 中执行
 $ mkdir software && cd software
 $ cp /mnt/c/Users/vmaping/kubectl .
 ```
@@ -61,14 +61,14 @@ $ echo 'alias k=kubectl' >>~/.bashrc
 $ source ~/.bashrc
 $ kubectl version --client -o yaml
 clientVersion:
-  buildDate: "2023-10-18T11:42:52Z"
+  buildDate: "2024-05-14T10:50:53Z"
   compiler: gc
-  gitCommit: a8a1abc25cad87333840cd7d54be2efaf31a3177
+  gitCommit: 6911225c3f747e1cd9d109c305436d08b668f086
   gitTreeState: clean
-  gitVersion: v1.28.3
-  goVersion: go1.20.10
+  gitVersion: v1.30.1
+  goVersion: go1.22.2
   major: "1"
-  minor: "28"
+  minor: "30"
   platform: linux/amd64
 kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
@@ -86,17 +86,17 @@ $ cp /mnt/c/Users/vmaping/.kube/config .
 $ tar -zxvf eksctl_Linux_amd64.tar.gz
 $ sudo mv eksctl /usr/local/bin
 $ eksctl version
-0.164.0
+0.182.0
 ```
 
 ### 3.4 安装 [helm](https://github.com/helm/helm）
 ```console
-$ curl "https://get.helm.sh/helm-v3.13.2-linux-amd64.tar.gz" -o "helm-v3.13.2-linux-amd64.tar.gz" # 在 cmd 中执行
-$ mv /mnt/c/Users/vmaping/helm-v3.13.2-linux-amd64.tar.gz . 
-$ tar -zxvf helm-v3.13.2-linux-amd64.tar.gz
+$ curl "https://get.helm.sh/helm-v3.15.1-linux-amd64.tar.gz" -o "helm-v3.15.1-linux-amd64.tar.gz" # 在 cmd termial 中执行
+$ mv /mnt/c/Users/vmaping/helm-v3.15.1-linux-amd64.tar.gz . 
+$ tar -zxvf helm-v3.15.1-linux-amd64.tar.gz
 $ sudo mv linux-amd64/helm /usr/local/bin
 $ helm version
-version.BuildInfo{Version:"v3.13.2", GitCommit:"2a2fb3b98829f1e0be6fb18af2f6599e0f4e8243", GitTreeState:"clean", GoVersion:"go1.20.10"}
+version.BuildInfo{Version:"v3.15.1", GitCommit:"e211f2aa62992bd72586b395de50979e31231829", GitTreeState:"clean", GoVersion:"go1.22.3"}
 ```
 
 ### 3.5 安装 [k9s](https://github.com/derailed/k9s) 
